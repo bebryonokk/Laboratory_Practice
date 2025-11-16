@@ -46,6 +46,34 @@ C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm
                               C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o) (_fflush_r)
 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
                               C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o) (_sbrk_r)
+C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-w_pow.o)
+                              build_F411RE/main.o (pow)
+C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_finite.o)
+                              C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-w_pow.o) (finite)
+C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o)
+                              C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-w_pow.o) (__ieee754_pow)
+C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_fabs.o)
+                              C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o) (fabs)
+C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_scalbn.o)
+                              C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o) (scalbn)
+C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+                              C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o) (__math_uflow)
+C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_sqrt.o)
+                              C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o) (__ieee754_sqrt)
+C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+                              build_F411RE/main.o (__aeabi_dmul)
+C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+                              C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o) (__aeabi_dsub)
+C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+                              C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o) (__aeabi_ddiv)
+C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+                              C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-w_pow.o) (__aeabi_dcmpeq)
+C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_unorddf2.o)
+                              C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-w_pow.o) (__aeabi_dcmpun)
+C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
+                              build_F411RE/main.o (__aeabi_d2ulz)
+C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
+                              C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o) (__aeabi_d2uiz)
 
 Discarded input sections
 
@@ -179,12 +207,8 @@ Discarded input sections
  .text.__fp_unlock_all
                 0x00000000       0x1c C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
  .data.__sglue  0x00000000        0xc C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
- .bss.__sf      0x00000000      0x138 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
  .bss.__stdio_exit_handler
                 0x00000000        0x4 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
- .comment       0x00000000       0x3a C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
- .ARM.attributes
-                0x00000000       0x34 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
  .text          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fwalk.o)
  .data          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fwalk.o)
  .bss           0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fwalk.o)
@@ -234,13 +258,6 @@ Discarded input sections
  .text          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
  .data          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
  .bss           0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
- .data._impure_ptr
-                0x00000000        0x4 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
- .data._impure_data
-                0x00000000       0x4c C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
- .comment       0x00000000       0x3a C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
- .ARM.attributes
-                0x00000000       0x34 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
  .text          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o)
  .data          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o)
  .bss           0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o)
@@ -267,10 +284,6 @@ Discarded input sections
  .text          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
  .data          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
  .bss           0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
- .text.__errno  0x00000000        0xc C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
- .comment       0x00000000       0x3a C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
- .ARM.attributes
-                0x00000000       0x34 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
  .text          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
  .data          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
  .bss           0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
@@ -396,6 +409,64 @@ Discarded input sections
  .comment       0x00000000       0x3a C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
  .ARM.attributes
                 0x00000000       0x34 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
+ .text          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-w_pow.o)
+ .data          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-w_pow.o)
+ .bss           0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-w_pow.o)
+ .text          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_finite.o)
+ .data          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_finite.o)
+ .bss           0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_finite.o)
+ .text          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o)
+ .data          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o)
+ .bss           0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o)
+ .text          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_fabs.o)
+ .data          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_fabs.o)
+ .bss           0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_fabs.o)
+ .text          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_scalbn.o)
+ .data          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_scalbn.o)
+ .bss           0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_scalbn.o)
+ .text          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+ .data          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+ .bss           0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+ .text.__math_may_uflow
+                0x00000000       0x10 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+ .text.__math_divzero
+                0x00000000       0x38 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+ .text.__math_invalid
+                0x00000000       0x4c C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+ .text.__math_check_uflow
+                0x00000000       0x38 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+ .text.__math_check_oflow
+                0x00000000       0x44 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+ .text          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_sqrt.o)
+ .data          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_sqrt.o)
+ .bss           0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_sqrt.o)
+ .text          0x00000000      0x254 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .data          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .bss           0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .debug_line    0x00000000       0xf5 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .debug_line_str
+                0x00000000      0x117 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .debug_info    0x00000000       0x3f C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .debug_abbrev  0x00000000       0x26 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .debug_aranges
+                0x00000000       0x20 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .debug_str     0x00000000      0x13b C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .debug_frame   0x00000000       0x30 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .ARM.attributes
+                0x00000000       0x22 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .data          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .data          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .bss           0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .data          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .bss           0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .data          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_unorddf2.o)
+ .bss           0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_unorddf2.o)
+ .text          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
+ .data          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
+ .bss           0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
+ .data          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
+ .bss           0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
  .text          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtend.o
  .data          0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtend.o
  .bss           0x00000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtend.o
@@ -451,204 +522,289 @@ LOAD C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gc
                 0x08000000                g_pfnVectors
                 0x08000198                        . = ALIGN (0x4)
 
-.text           0x08000198      0x31c
+.text           0x08000198     0x1e90
                 0x08000198                        . = ALIGN (0x4)
  *(.text)
+ .text          0x08000198      0x378 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+                0x08000198                __aeabi_drsub
+                0x080001a0                __aeabi_dsub
+                0x080001a0                __subdf3
+                0x080001a4                __aeabi_dadd
+                0x080001a4                __adddf3
+                0x0800041c                __floatunsidf
+                0x0800041c                __aeabi_ui2d
+                0x0800043c                __floatsidf
+                0x0800043c                __aeabi_i2d
+                0x08000460                __aeabi_f2d
+                0x08000460                __extendsfdf2
+                0x080004a4                __floatundidf
+                0x080004a4                __aeabi_ul2d
+                0x080004b4                __floatdidf
+                0x080004b4                __aeabi_l2d
+ .text          0x08000510      0x424 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+                0x08000510                __aeabi_dmul
+                0x08000510                __muldf3
+                0x08000764                __divdf3
+                0x08000764                __aeabi_ddiv
+ .text          0x08000934      0x110 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+                0x08000934                __gtdf2
+                0x08000934                __gedf2
+                0x0800093c                __ltdf2
+                0x0800093c                __ledf2
+                0x08000944                __nedf2
+                0x08000944                __eqdf2
+                0x08000944                __cmpdf2
+                0x080009c0                __aeabi_cdrcmple
+                0x080009d0                __aeabi_cdcmpeq
+                0x080009d0                __aeabi_cdcmple
+                0x080009e0                __aeabi_dcmpeq
+                0x080009f4                __aeabi_dcmplt
+                0x08000a08                __aeabi_dcmple
+                0x08000a1c                __aeabi_dcmpge
+                0x08000a30                __aeabi_dcmpgt
+ .text          0x08000a44       0x2c C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_unorddf2.o)
+                0x08000a44                __unorddf2
+                0x08000a44                __aeabi_dcmpun
+ .text          0x08000a70       0x40 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
+                0x08000a70                __aeabi_d2uiz
+                0x08000a70                __fixunsdfsi
  *(.text*)
  .text.__do_global_dtors_aux
-                0x08000198       0x24 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x08000ab0       0x24 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
  .text.frame_dummy
-                0x080001bc       0x1c C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x08000ad4       0x1c C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
  .text.SystemInit
-                0x080001d8       0x14 build_F411RE/system_stm32f4xx.o
-                0x080001d8                SystemInit
- .text.main     0x080001ec      0x158 build_F411RE/main.o
-                0x080001ec                main
+                0x08000af0       0x14 build_F411RE/system_stm32f4xx.o
+                0x08000af0                SystemInit
+ *fill*         0x08000b04        0x4 
+ .text.main     0x08000b08      0x2b4 build_F411RE/main.o
+                0x08000b08                main
  .text.Init_of_myself_macroses
-                0x08000344       0x34 build_F411RE/init.o
-                0x08000344                Init_of_myself_macroses
+                0x08000dbc       0x34 build_F411RE/init.o
+                0x08000dbc                Init_of_myself_macroses
  .text.Init_of_hand_writing
-                0x08000378       0x40 build_F411RE/init.o
-                0x08000378                Init_of_hand_writing
+                0x08000df0       0x40 build_F411RE/init.o
+                0x08000df0                Init_of_hand_writing
  .text.Init_with_macroses
-                0x080003b8       0x48 build_F411RE/init.o
-                0x080003b8                Init_with_macroses
+                0x08000e30       0x48 build_F411RE/init.o
+                0x08000e30                Init_with_macroses
  .text.Reset_Handler
-                0x08000400       0x50 build_F411RE/startup_stm32f411xe.o
-                0x08000400                Reset_Handler
+                0x08000e78       0x50 build_F411RE/startup_stm32f411xe.o
+                0x08000e78                Reset_Handler
  .text.Default_Handler
-                0x08000450        0x2 build_F411RE/startup_stm32f411xe.o
-                0x08000450                RTC_Alarm_IRQHandler
-                0x08000450                EXTI2_IRQHandler
-                0x08000450                DebugMon_Handler
-                0x08000450                SPI4_IRQHandler
-                0x08000450                TIM1_CC_IRQHandler
-                0x08000450                DMA2_Stream5_IRQHandler
-                0x08000450                HardFault_Handler
-                0x08000450                DMA1_Stream5_IRQHandler
-                0x08000450                SysTick_Handler
-                0x08000450                PVD_IRQHandler
-                0x08000450                SDIO_IRQHandler
-                0x08000450                TAMP_STAMP_IRQHandler
-                0x08000450                PendSV_Handler
-                0x08000450                NMI_Handler
-                0x08000450                EXTI3_IRQHandler
-                0x08000450                TIM1_UP_TIM10_IRQHandler
-                0x08000450                I2C3_ER_IRQHandler
-                0x08000450                EXTI0_IRQHandler
-                0x08000450                I2C2_EV_IRQHandler
-                0x08000450                DMA1_Stream2_IRQHandler
-                0x08000450                FPU_IRQHandler
-                0x08000450                UsageFault_Handler
-                0x08000450                DMA2_Stream2_IRQHandler
-                0x08000450                SPI1_IRQHandler
-                0x08000450                TIM1_BRK_TIM9_IRQHandler
-                0x08000450                DMA2_Stream3_IRQHandler
-                0x08000450                USART6_IRQHandler
-                0x08000450                DMA2_Stream0_IRQHandler
-                0x08000450                TIM4_IRQHandler
-                0x08000450                I2C1_EV_IRQHandler
-                0x08000450                DMA1_Stream6_IRQHandler
-                0x08000450                DMA1_Stream1_IRQHandler
-                0x08000450                TIM3_IRQHandler
-                0x08000450                RCC_IRQHandler
-                0x08000450                Default_Handler
-                0x08000450                EXTI15_10_IRQHandler
-                0x08000450                ADC_IRQHandler
-                0x08000450                DMA1_Stream7_IRQHandler
-                0x08000450                SPI5_IRQHandler
-                0x08000450                TIM5_IRQHandler
-                0x08000450                DMA2_Stream7_IRQHandler
-                0x08000450                I2C3_EV_IRQHandler
-                0x08000450                EXTI9_5_IRQHandler
-                0x08000450                RTC_WKUP_IRQHandler
-                0x08000450                SPI2_IRQHandler
-                0x08000450                MemManage_Handler
-                0x08000450                DMA1_Stream0_IRQHandler
-                0x08000450                SVC_Handler
-                0x08000450                EXTI4_IRQHandler
-                0x08000450                WWDG_IRQHandler
-                0x08000450                TIM2_IRQHandler
-                0x08000450                OTG_FS_WKUP_IRQHandler
-                0x08000450                TIM1_TRG_COM_TIM11_IRQHandler
-                0x08000450                EXTI1_IRQHandler
-                0x08000450                USART2_IRQHandler
-                0x08000450                I2C2_ER_IRQHandler
-                0x08000450                DMA2_Stream1_IRQHandler
-                0x08000450                FLASH_IRQHandler
-                0x08000450                DMA2_Stream4_IRQHandler
-                0x08000450                BusFault_Handler
-                0x08000450                USART1_IRQHandler
-                0x08000450                OTG_FS_IRQHandler
-                0x08000450                SPI3_IRQHandler
-                0x08000450                DMA1_Stream4_IRQHandler
-                0x08000450                I2C1_ER_IRQHandler
-                0x08000450                DMA2_Stream6_IRQHandler
-                0x08000450                DMA1_Stream3_IRQHandler
- *fill*         0x08000452        0x2 
+                0x08000ec8        0x2 build_F411RE/startup_stm32f411xe.o
+                0x08000ec8                RTC_Alarm_IRQHandler
+                0x08000ec8                EXTI2_IRQHandler
+                0x08000ec8                DebugMon_Handler
+                0x08000ec8                SPI4_IRQHandler
+                0x08000ec8                TIM1_CC_IRQHandler
+                0x08000ec8                DMA2_Stream5_IRQHandler
+                0x08000ec8                HardFault_Handler
+                0x08000ec8                DMA1_Stream5_IRQHandler
+                0x08000ec8                SysTick_Handler
+                0x08000ec8                PVD_IRQHandler
+                0x08000ec8                SDIO_IRQHandler
+                0x08000ec8                TAMP_STAMP_IRQHandler
+                0x08000ec8                PendSV_Handler
+                0x08000ec8                NMI_Handler
+                0x08000ec8                EXTI3_IRQHandler
+                0x08000ec8                TIM1_UP_TIM10_IRQHandler
+                0x08000ec8                I2C3_ER_IRQHandler
+                0x08000ec8                EXTI0_IRQHandler
+                0x08000ec8                I2C2_EV_IRQHandler
+                0x08000ec8                DMA1_Stream2_IRQHandler
+                0x08000ec8                FPU_IRQHandler
+                0x08000ec8                UsageFault_Handler
+                0x08000ec8                DMA2_Stream2_IRQHandler
+                0x08000ec8                SPI1_IRQHandler
+                0x08000ec8                TIM1_BRK_TIM9_IRQHandler
+                0x08000ec8                DMA2_Stream3_IRQHandler
+                0x08000ec8                USART6_IRQHandler
+                0x08000ec8                DMA2_Stream0_IRQHandler
+                0x08000ec8                TIM4_IRQHandler
+                0x08000ec8                I2C1_EV_IRQHandler
+                0x08000ec8                DMA1_Stream6_IRQHandler
+                0x08000ec8                DMA1_Stream1_IRQHandler
+                0x08000ec8                TIM3_IRQHandler
+                0x08000ec8                RCC_IRQHandler
+                0x08000ec8                Default_Handler
+                0x08000ec8                EXTI15_10_IRQHandler
+                0x08000ec8                ADC_IRQHandler
+                0x08000ec8                DMA1_Stream7_IRQHandler
+                0x08000ec8                SPI5_IRQHandler
+                0x08000ec8                TIM5_IRQHandler
+                0x08000ec8                DMA2_Stream7_IRQHandler
+                0x08000ec8                I2C3_EV_IRQHandler
+                0x08000ec8                EXTI9_5_IRQHandler
+                0x08000ec8                RTC_WKUP_IRQHandler
+                0x08000ec8                SPI2_IRQHandler
+                0x08000ec8                MemManage_Handler
+                0x08000ec8                DMA1_Stream0_IRQHandler
+                0x08000ec8                SVC_Handler
+                0x08000ec8                EXTI4_IRQHandler
+                0x08000ec8                WWDG_IRQHandler
+                0x08000ec8                TIM2_IRQHandler
+                0x08000ec8                OTG_FS_WKUP_IRQHandler
+                0x08000ec8                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08000ec8                EXTI1_IRQHandler
+                0x08000ec8                USART2_IRQHandler
+                0x08000ec8                I2C2_ER_IRQHandler
+                0x08000ec8                DMA2_Stream1_IRQHandler
+                0x08000ec8                FLASH_IRQHandler
+                0x08000ec8                DMA2_Stream4_IRQHandler
+                0x08000ec8                BusFault_Handler
+                0x08000ec8                USART1_IRQHandler
+                0x08000ec8                OTG_FS_IRQHandler
+                0x08000ec8                SPI3_IRQHandler
+                0x08000ec8                DMA1_Stream4_IRQHandler
+                0x08000ec8                I2C1_ER_IRQHandler
+                0x08000ec8                DMA2_Stream6_IRQHandler
+                0x08000ec8                DMA1_Stream3_IRQHandler
+ *fill*         0x08000eca        0x2 
+ .text.__errno  0x08000ecc        0xc C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
+                0x08000ecc                __errno
  .text.__libc_init_array
-                0x08000454       0x48 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
-                0x08000454                __libc_init_array
+                0x08000ed8       0x48 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
+                0x08000ed8                __libc_init_array
+ .text.pow      0x08000f20       0xf0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-w_pow.o)
+                0x08000f20                pow
+ .text.finite   0x08001010       0x18 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_finite.o)
+                0x08001010                finite
+ .text.__ieee754_pow
+                0x08001028      0xc14 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o)
+                0x08001028                __ieee754_pow
+ .text.fabs     0x08001c3c       0x10 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_fabs.o)
+                0x08001c3c                fabs
+ *fill*         0x08001c4c        0x4 
+ .text.scalbn   0x08001c50      0x114 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_scalbn.o)
+                0x08001c50                scalbn
+ .text.with_errno
+                0x08001d64       0x24 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+ .text.xflow    0x08001d88       0x34 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+ *fill*         0x08001dbc        0x4 
+ .text.__math_uflow
+                0x08001dc0       0x10 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+                0x08001dc0                __math_uflow
+ .text.__math_oflow
+                0x08001dd0       0x10 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+                0x08001dd0                __math_oflow
+ .text.__ieee754_sqrt
+                0x08001de0      0x1f4 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_sqrt.o)
+                0x08001de0                __ieee754_sqrt
+ .text.__fixunsdfdi
+                0x08001fd4       0x3c C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
+                0x08001fd4                __fixunsdfdi
+                0x08001fd4                __aeabi_d2ulz
  *(.glue_7)
- .glue_7        0x0800049c        0x0 linker stubs
+ .glue_7        0x08002010        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0800049c        0x0 linker stubs
+ .glue_7t       0x08002010        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0800049c        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x08002010        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x0800049c        0x4 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crti.o
-                0x0800049c                _init
- .init          0x080004a0        0x8 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x08002010        0x4 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crti.o
+                0x08002010                _init
+ .init          0x08002014        0x8 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x080004a8        0x4 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crti.o
-                0x080004a8                _fini
- .fini          0x080004ac        0x8 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtn.o
-                0x080004b4                        . = ALIGN (0x4)
-                0x080004b4                        _etext = .
+ .fini          0x0800201c        0x4 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crti.o
+                0x0800201c                _fini
+ .fini          0x08002020        0x8 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtn.o
+                0x08002028                        . = ALIGN (0x4)
+                0x08002028                        _etext = .
 
-.vfp11_veneer   0x080004b4        0x0
- .vfp11_veneer  0x080004b4        0x0 linker stubs
+.vfp11_veneer   0x08002028        0x0
+ .vfp11_veneer  0x08002028        0x0 linker stubs
 
-.v4_bx          0x080004b4        0x0
- .v4_bx         0x080004b4        0x0 linker stubs
+.v4_bx          0x08002028        0x0
+ .v4_bx         0x08002028        0x0 linker stubs
 
-.iplt           0x080004b4        0x0
- .iplt          0x080004b4        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x08002028        0x0
+ .iplt          0x08002028        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rel.dyn        0x080004b4        0x0
- .rel.iplt      0x080004b4        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
-
-.rodata         0x080004b4        0x0
-                0x080004b4                        . = ALIGN (0x4)
+.rodata         0x08002028       0x10
+                0x08002028                        . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
-                0x080004b4                        . = ALIGN (0x4)
+ .rodata.tiny   0x08002028        0x8 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_sqrt.o)
+ .rodata.one    0x08002030        0x8 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_sqrt.o)
+                0x08002038                        . = ALIGN (0x4)
+
+.rel.dyn        0x08002038        0x0
+ .rel.iplt      0x08002038        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x080004b4        0x0
-                0x080004b4                        __exidx_start = .
+.ARM            0x08002038        0x0
+                0x08002038                        __exidx_start = .
  *(.ARM.exidx*)
-                0x080004b4                        __exidx_end = .
+                0x08002038                        __exidx_end = .
 
-.preinit_array  0x080004b4        0x0
-                0x080004b4                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08002038        0x0
+                0x08002038                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x080004b4                        PROVIDE (__preinit_array_end = .)
+                0x08002038                        PROVIDE (__preinit_array_end = .)
 
-.init_array     0x080004b4        0x4
-                0x080004b4                        PROVIDE (__init_array_start = .)
+.init_array     0x08002038        0x4
+                0x08002038                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x080004b4        0x4 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x080004b8                        PROVIDE (__init_array_end = .)
+ .init_array    0x08002038        0x4 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x0800203c                        PROVIDE (__init_array_end = .)
 
-.fini_array     0x080004b8        0x4
-                0x080004b8                        PROVIDE (__fini_array_start = .)
+.fini_array     0x0800203c        0x4
+                0x0800203c                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x080004b8        0x4 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x080004bc                        PROVIDE (__fini_array_end = .)
-                0x080004bc                        _sidata = LOADADDR (.data)
+ .fini_array    0x0800203c        0x4 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x08002040                        PROVIDE (__fini_array_end = .)
+                0x08002040                        _sidata = LOADADDR (.data)
 
-.data           0x20000000        0x0 load address 0x080004bc
+.data           0x20000000       0x50 load address 0x08002040
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
  *(.data*)
-                0x20000000                        . = ALIGN (0x4)
-                0x20000000                        _edata = .
+ .data._impure_ptr
+                0x20000000        0x4 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
+                0x20000000                _impure_ptr
+ .data._impure_data
+                0x20000004       0x4c C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
+                0x20000004                _impure_data
+                0x20000050                        . = ALIGN (0x4)
+                0x20000050                        _edata = .
 
-.igot.plt       0x20000000        0x0 load address 0x080004bc
- .igot.plt      0x20000000        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x20000000                        . = ALIGN (0x4)
+.igot.plt       0x20000050        0x0 load address 0x08002090
+ .igot.plt      0x20000050        0x0 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x20000050                        . = ALIGN (0x4)
 
-.bss            0x20000000       0x1c load address 0x080004bc
-                0x20000000                        _sbss = .
-                0x20000000                        __bss_start__ = _sbss
+.bss            0x20000050      0x154 load address 0x08002090
+                0x20000050                        _sbss = .
+                0x20000050                        __bss_start__ = _sbss
  *(.bss)
  *(.bss*)
  .bss.completed.1
-                0x20000000        0x1 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
- *fill*         0x20000001        0x3 
- .bss.object.0  0x20000004       0x18 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x20000050        0x1 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ *fill*         0x20000051        0x3 
+ .bss.object.0  0x20000054       0x18 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .bss.__sf      0x2000006c      0x138 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+                0x2000006c                __sf
  *(COMMON)
-                0x2000001c                        . = ALIGN (0x4)
-                0x2000001c                        _ebss = .
-                0x2000001c                        __bss_end__ = _ebss
+                0x200001a4                        . = ALIGN (0x4)
+                0x200001a4                        _ebss = .
+                0x200001a4                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x2000001c      0x604 load address 0x080004bc
-                0x20000020                        . = ALIGN (0x8)
- *fill*         0x2000001c        0x4 
+                0x200001a4      0x604 load address 0x08002090
+                0x200001a8                        . = ALIGN (0x8)
+ *fill*         0x200001a4        0x4 
                 [!provide]                        PROVIDE (end = .)
-                0x20000020                        PROVIDE (_end = .)
-                0x20000220                        . = (. + _Min_Heap_Size)
- *fill*         0x20000020      0x200 
-                0x20000620                        . = (. + _Min_Stack_Size)
- *fill*         0x20000220      0x400 
-                0x20000620                        . = ALIGN (0x8)
+                0x200001a8                        PROVIDE (_end = .)
+                0x200003a8                        . = (. + _Min_Heap_Size)
+ *fill*         0x200001a8      0x200 
+                0x200007a8                        . = (. + _Min_Stack_Size)
+ *fill*         0x200003a8      0x400 
+                0x200007a8                        . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -671,9 +827,41 @@ LOAD C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gc
  .ARM.attributes
                 0x000000f2       0x21 build_F411RE/startup_stm32f411xe.o
  .ARM.attributes
-                0x00000113       0x34 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
+                0x00000113       0x34 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
  .ARM.attributes
-                0x00000147       0x22 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtn.o
+                0x00000147       0x34 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
+ .ARM.attributes
+                0x0000017b       0x34 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
+ .ARM.attributes
+                0x000001af       0x34 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
+ .ARM.attributes
+                0x000001e3       0x34 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-w_pow.o)
+ .ARM.attributes
+                0x00000217       0x34 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_finite.o)
+ .ARM.attributes
+                0x0000024b       0x34 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o)
+ .ARM.attributes
+                0x0000027f       0x34 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_fabs.o)
+ .ARM.attributes
+                0x000002b3       0x34 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_scalbn.o)
+ .ARM.attributes
+                0x000002e7       0x34 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+ .ARM.attributes
+                0x0000031b       0x34 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_sqrt.o)
+ .ARM.attributes
+                0x0000034f       0x22 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x00000371       0x22 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x00000393       0x22 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .ARM.attributes
+                0x000003b5       0x22 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_unorddf2.o)
+ .ARM.attributes
+                0x000003d7       0x34 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
+ .ARM.attributes
+                0x0000040b       0x22 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
+ .ARM.attributes
+                0x0000042d       0x22 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtn.o
 OUTPUT(build_F411RE/STM32F411RE.elf elf32-littlearm)
 LOAD linker stubs
 LOAD C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a
@@ -686,25 +874,48 @@ LOAD C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gc
  .comment       0x00000039       0x3a build_F411RE/system_stm32f4xx.o
  .comment       0x00000039       0x3a build_F411RE/main.o
  .comment       0x00000039       0x3a build_F411RE/init.o
+ .comment       0x00000039       0x3a C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+ .comment       0x00000039       0x3a C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-impure.o)
+ .comment       0x00000039       0x3a C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
  .comment       0x00000039       0x3a C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
+ .comment       0x00000039       0x3a C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-w_pow.o)
+ .comment       0x00000039       0x3a C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_finite.o)
+ .comment       0x00000039       0x3a C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o)
+ .comment       0x00000039       0x3a C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_fabs.o)
+ .comment       0x00000039       0x3a C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_scalbn.o)
+ .comment       0x00000039       0x3a C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+ .comment       0x00000039       0x3a C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_sqrt.o)
+ .comment       0x00000039       0x3a C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
 
-.debug_info     0x00000000      0xbf1
+.debug_info     0x00000000     0x13e1
  .debug_info    0x00000000      0x5de build_F411RE/system_stm32f4xx.o
- .debug_info    0x000005de      0x21c build_F411RE/main.o
- .debug_info    0x000007fa      0x3c7 build_F411RE/init.o
- .debug_info    0x00000bc1       0x30 build_F411RE/startup_stm32f411xe.o
+ .debug_info    0x000005de      0x409 build_F411RE/main.o
+ .debug_info    0x000009e7      0x3c7 build_F411RE/init.o
+ .debug_info    0x00000dae       0x30 build_F411RE/startup_stm32f411xe.o
+ .debug_info    0x00000dde       0xd3 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_info    0x00000eb1       0x57 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .debug_info    0x00000f08       0xdf C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .debug_info    0x00000fe7       0x3c C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_unorddf2.o)
+ .debug_info    0x00001023      0x382 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
+ .debug_info    0x000013a5       0x3c C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
 
-.debug_abbrev   0x00000000      0x2f0
+.debug_abbrev   0x00000000      0x52d
  .debug_abbrev  0x00000000      0x11b build_F411RE/system_stm32f4xx.o
- .debug_abbrev  0x0000011b      0x10a build_F411RE/main.o
- .debug_abbrev  0x00000225       0xae build_F411RE/init.o
- .debug_abbrev  0x000002d3       0x1d build_F411RE/startup_stm32f411xe.o
+ .debug_abbrev  0x0000011b      0x17c build_F411RE/main.o
+ .debug_abbrev  0x00000297       0xae build_F411RE/init.o
+ .debug_abbrev  0x00000345       0x1d build_F411RE/startup_stm32f411xe.o
+ .debug_abbrev  0x00000362       0x28 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_abbrev  0x0000038a       0x28 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .debug_abbrev  0x000003b2       0x28 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .debug_abbrev  0x000003da       0x28 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_unorddf2.o)
+ .debug_abbrev  0x00000402      0x103 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
+ .debug_abbrev  0x00000505       0x28 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
 
-.debug_loc      0x00000000      0x278
+.debug_loc      0x00000000      0x358
  .debug_loc     0x00000000      0x181 build_F411RE/system_stm32f4xx.o
- .debug_loc     0x00000181       0xf7 build_F411RE/main.o
+ .debug_loc     0x00000181      0x1d7 build_F411RE/main.o
 
-.debug_aranges  0x00000000       0xa0
+.debug_aranges  0x00000000      0x160
  .debug_aranges
                 0x00000000       0x28 build_F411RE/system_stm32f4xx.o
  .debug_aranges
@@ -713,6 +924,18 @@ LOAD C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gc
                 0x00000048       0x30 build_F411RE/init.o
  .debug_aranges
                 0x00000078       0x28 build_F411RE/startup_stm32f411xe.o
+ .debug_aranges
+                0x000000a0       0x20 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_aranges
+                0x000000c0       0x20 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .debug_aranges
+                0x000000e0       0x20 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .debug_aranges
+                0x00000100       0x20 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_unorddf2.o)
+ .debug_aranges
+                0x00000120       0x20 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
+ .debug_aranges
+                0x00000140       0x20 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
 
 .debug_ranges   0x00000000       0x68
  .debug_ranges  0x00000000       0x18 build_F411RE/system_stm32f4xx.o
@@ -720,23 +943,64 @@ LOAD C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gc
  .debug_ranges  0x00000028       0x20 build_F411RE/init.o
  .debug_ranges  0x00000048       0x20 build_F411RE/startup_stm32f411xe.o
 
-.debug_line     0x00000000      0x7cb
+.debug_line     0x00000000      0xf1f
  .debug_line    0x00000000      0x28d build_F411RE/system_stm32f4xx.o
- .debug_line    0x0000028d      0x2b4 build_F411RE/main.o
- .debug_line    0x00000541      0x200 build_F411RE/init.o
- .debug_line    0x00000741       0x8a build_F411RE/startup_stm32f411xe.o
+ .debug_line    0x0000028d      0x4ce build_F411RE/main.o
+ .debug_line    0x0000075b      0x200 build_F411RE/init.o
+ .debug_line    0x0000095b       0x8a build_F411RE/startup_stm32f411xe.o
+ .debug_line    0x000009e5      0x16f C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_line    0x00000b54      0x184 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .debug_line    0x00000cd8       0xa6 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .debug_line    0x00000d7e       0x57 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_unorddf2.o)
+ .debug_line    0x00000dd5       0xec C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
+ .debug_line    0x00000ec1       0x5e C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
 
-.debug_str      0x00000000      0x41a
- .debug_str     0x00000000      0x41a build_F411RE/system_stm32f4xx.o
+.debug_str      0x00000000      0xcb9
+ .debug_str     0x00000000      0xcb9 build_F411RE/system_stm32f4xx.o
                                 0x364 (size before relaxing)
- .debug_str     0x0000041a      0x200 build_F411RE/main.o
- .debug_str     0x0000041a      0x2e9 build_F411RE/init.o
- .debug_str     0x0000041a       0x6f build_F411RE/startup_stm32f411xe.o
+ .debug_str     0x00000cb9      0x25c build_F411RE/main.o
+ .debug_str     0x00000cb9      0x2e9 build_F411RE/init.o
+ .debug_str     0x00000cb9       0x6f build_F411RE/startup_stm32f411xe.o
+ .debug_str     0x00000cb9      0x1d1 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_str     0x00000cb9      0x151 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .debug_str     0x00000cb9      0x1da C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .debug_str     0x00000cb9      0x13f C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_unorddf2.o)
+ .debug_str     0x00000cb9      0x721 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
+ .debug_str     0x00000cb9      0x140 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
 
-.debug_frame    0x00000000       0x98
+.debug_frame    0x00000000      0x2d0
  .debug_frame   0x00000000       0x30 build_F411RE/system_stm32f4xx.o
- .debug_frame   0x00000030       0x28 build_F411RE/main.o
- .debug_frame   0x00000058       0x40 build_F411RE/init.o
+ .debug_frame   0x00000030       0x30 build_F411RE/main.o
+ .debug_frame   0x00000060       0x40 build_F411RE/init.o
+ .debug_frame   0x000000a0       0xac C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x0000014c       0x50 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x0000019c       0xc4 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x00000260       0x20 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_unorddf2.o)
+ .debug_frame   0x00000280       0x2c C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
+ .debug_frame   0x000002ac       0x24 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
+
+.debug_line_str
+                0x00000000      0x117
+ .debug_line_str
+                0x00000000      0x117 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_line_str
+                0x00000117      0x117 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .debug_line_str
+                0x00000117      0x117 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .debug_line_str
+                0x00000117      0x117 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_unorddf2.o)
+ .debug_line_str
+                0x00000117      0x117 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
+
+.debug_loclists
+                0x00000000       0x89
+ .debug_loclists
+                0x00000000       0x89 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
+
+.debug_rnglists
+                0x00000000       0x13
+ .debug_rnglists
+                0x00000000       0x13 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
 
 Cross Reference Table
 
@@ -822,6 +1086,61 @@ USART6_IRQHandler                                 build_F411RE/startup_stm32f411
 UsageFault_Handler                                build_F411RE/startup_stm32f411xe.o
 WWDG_IRQHandler                                   build_F411RE/startup_stm32f411xe.o
 _Min_Stack_Size                                   build_F411RE/sysmem.o
+__adddf3                                          C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__aeabi_cdcmpeq                                   C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+__aeabi_cdcmple                                   C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+__aeabi_cdrcmple                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+__aeabi_d2uiz                                     C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
+__aeabi_d2ulz                                     C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
+                                                  build_F411RE/main.o
+__aeabi_dadd                                      C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_sqrt.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_scalbn.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o)
+__aeabi_dcmpeq                                    C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-w_pow.o)
+__aeabi_dcmpge                                    C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o)
+__aeabi_dcmpgt                                    C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o)
+__aeabi_dcmple                                    C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_sqrt.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+__aeabi_dcmplt                                    C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_sqrt.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-w_pow.o)
+__aeabi_dcmpun                                    C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_unorddf2.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-w_pow.o)
+__aeabi_ddiv                                      C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_sqrt.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o)
+__aeabi_dmul                                      C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_sqrt.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_scalbn.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o)
+                                                  build_F411RE/main.o
+__aeabi_drsub                                     C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__aeabi_dsub                                      C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_sqrt.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o)
+__aeabi_f2d                                       C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__aeabi_i2d                                       C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o)
+                                                  build_F411RE/main.o
+__aeabi_l2d                                       C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__aeabi_ui2d                                      C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
+__aeabi_ul2d                                      C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
 __atexit                                          C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__call_atexit.o)
                                                   C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__atexit.o)
 __atexit0                                         C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__atexit.o)
@@ -833,20 +1152,39 @@ __bss_start__                                     C:/for all/1study/MC_tools/xpa
 __call_exitprocs                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__call_atexit.o)
                                                   C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__atexit.o)
                                                   C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-exit.o)
+__cmpdf2                                          C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
 __deregister_frame_info                           C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+__divdf3                                          C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
 __dso_handle                                      C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/crtbegin.o
 __env                                             build_F411RE/syscalls.o
+__eqdf2                                           C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
 __errno                                           C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-w_pow.o)
                                                   build_F411RE/sysmem.o
                                                   build_F411RE/syscalls.o
+__extendsfdf2                                     C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
 __fini_array_end                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fini.o)
 __fini_array_start                                C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fini.o)
+__fixunsdfdi                                      C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_fixunsdfdi.o)
+__fixunsdfsi                                      C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
+__floatdidf                                       C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__floatsidf                                       C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__floatundidf                                     C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__floatunsidf                                     C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
 __fp_lock_all                                     C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
 __fp_unlock_all                                   C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+__gedf2                                           C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+__gtdf2                                           C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+__ieee754_pow                                     C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-w_pow.o)
+__ieee754_sqrt                                    C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_sqrt.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o)
 __init_array_end                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
 __init_array_start                                C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
 __io_getchar                                      build_F411RE/syscalls.o
 __io_putchar                                      build_F411RE/syscalls.o
+__ledf2                                           C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
 __libc_fini_array                                 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fini.o)
                                                   C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
 __libc_init_array                                 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
@@ -863,6 +1201,7 @@ __lock___malloc_recursive_mutex                   C:/for all/1study/MC_tools/xpa
 __lock___sfp_recursive_mutex                      C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
                                                   C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
 __lock___tz_mutex                                 C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+__ltdf2                                           C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
 __malloc_free_list                                C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
                                                   C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
 __malloc_lock                                     C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
@@ -872,6 +1211,18 @@ __malloc_sbrk_start                               C:/for all/1study/MC_tools/xpa
 __malloc_unlock                                   C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
                                                   C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
                                                   C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
+__math_check_oflow                                C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+__math_check_uflow                                C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+__math_divzero                                    C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+__math_invalid                                    C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+__math_may_uflow                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+__math_oflow                                      C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o)
+__math_uflow                                      C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_err.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o)
+__muldf3                                          C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+__nedf2                                           C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
 __on_exit_args                                    C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-__atexit.o)
 __preinit_array_end                               C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
 __preinit_array_start                             C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
@@ -919,8 +1270,10 @@ __sseek                                           C:/for all/1study/MC_tools/xpa
 __stack                                           C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
 __stdio_exit_handler                              C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
                                                   C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-exit.o)
+__subdf3                                          C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
 __swrite                                          C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
                                                   C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+__unorddf2                                        C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_unorddf2.o)
 _close                                            build_F411RE/syscalls.o
                                                   C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o)
 _close_r                                          C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o)
@@ -999,7 +1352,11 @@ errno                                             C:/for all/1study/MC_tools/xpa
                                                   C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o)
 exit                                              C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-exit.o)
                                                   C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+fabs                                              C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_fabs.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o)
 fflush                                            C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+finite                                            C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_finite.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-w_pow.o)
 g_pfnVectors                                      build_F411RE/startup_stm32f411xe.o
 hardware_init_hook                                C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
 initialise_monitor_handles                        build_F411RE/syscalls.o
@@ -1010,4 +1367,8 @@ malloc                                            C:/for all/1study/MC_tools/xpa
 memset                                            C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
                                                   C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
                                                   C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+pow                                               C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-w_pow.o)
+                                                  build_F411RE/main.o
+scalbn                                            C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-s_scalbn.o)
+                                                  C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-e_pow.o)
 software_init_hook                                C:/for all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
