@@ -12,7 +12,7 @@
             "type": "cortex-debug",
             "runToEntryPoint": "main",
             "servertype": "openocd",
-            "device": "STM32F429ZI",
+            "device": "STM32F411RE",
             "configFiles": [
                 "interface/stlink.cfg",
                 "target/stm32f4x.cfg"
