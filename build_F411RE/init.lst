@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s 			page 1
+ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\ccqN2ELG.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -20,551 +20,485 @@ ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s 			page 1
   17              	.Ltext0:
   18              		.cfi_sections	.debug_frame
   19              		.file 1 "Core/Scr/init.c"
-  20              		.section	.text.Init_of_myself_macroses,"ax",%progbits
+  20              		.section	.text.GPIO_INIT,"ax",%progbits
   21              		.align	1
-  22              		.global	Init_of_myself_macroses
+  22              		.global	GPIO_INIT
   23              		.syntax unified
   24              		.thumb
   25              		.thumb_func
-  27              	Init_of_myself_macroses:
+  27              	GPIO_INIT:
   28              	.LFB130:
    1:Core/Scr/init.c **** #include "../Inc/init.h"
    2:Core/Scr/init.c **** 
-   3:Core/Scr/init.c **** /*диод, активируемый дефайнами PA4
-   4:Core/Scr/init.c **** диод, активируемый ручным вводом PВ0
-   5:Core/Scr/init.c **** диоды, активируемый макромами PС1 и PС0
-   6:Core/Scr/init.c **** кнопка PС13
-   7:Core/Scr/init.c **** */
-   8:Core/Scr/init.c **** 
-   9:Core/Scr/init.c **** void Init_of_myself_macroses(void)
-  10:Core/Scr/init.c **** {
-  29              		.loc 1 10 1 view -0
+   3:Core/Scr/init.c **** void GPIO_INIT(void)
+   4:Core/Scr/init.c **** {
+  29              		.loc 1 4 1 view -0
   30              		.cfi_startproc
   31              		@ args = 0, pretend = 0, frame = 0
   32              		@ frame_needed = 0, uses_anonymous_args = 0
   33              		@ link register save eliminated.
-  11:Core/Scr/init.c ****     RCC_AHB1EN |= RCC_GPIOAEN_EN;
-  34              		.loc 1 11 5 view .LVU1
-  35 0000 0A4A     		ldr	r2, .L2
-  36 0002 D2F83038 		ldr	r3, [r2, #2096]
-  37              		.loc 1 11 16 is_stmt 0 view .LVU2
-  38 0006 43F00103 		orr	r3, r3, #1
-  39 000a C2F83038 		str	r3, [r2, #2096]
-  12:Core/Scr/init.c ****     RCC_GPIOA_MODER |= RCC_GPIOA_P4_OUT;
-  40              		.loc 1 12 5 is_stmt 1 view .LVU3
-  41 000e 084B     		ldr	r3, .L2+4
-  42 0010 1A68     		ldr	r2, [r3]
-  43              		.loc 1 12 21 is_stmt 0 view .LVU4
-  44 0012 42F48072 		orr	r2, r2, #256
-  45 0016 1A60     		str	r2, [r3]
-  13:Core/Scr/init.c ****     RCC_GPIOA_OTYPER |= RCC_GPIOA_OTYPER_P4_PP;
-ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s 			page 2
+   5:Core/Scr/init.c ****     // Обращение через дерективы и собственноручно напи�
+   6:Core/Scr/init.c ****     SET_BIT(RCC_AHB1EN, RCC_GPIOAEN_EN);                // включение тактирован�
+  34              		.loc 1 6 5 view .LVU1
+  35 0000 2449     		ldr	r1, .L2
+  36 0002 D1F83028 		ldr	r2, [r1, #2096]
+  37 0006 42F00103 		orr	r3, r2, #1
+  38 000a C1F83038 		str	r3, [r1, #2096]
+   7:Core/Scr/init.c ****     SET_BIT(RCC_GPIOA_MODER, RCC_GPIOA_P4_OUT);         // настройка режима рабо
+  39              		.loc 1 7 5 view .LVU2
+  40 000e 224B     		ldr	r3, .L2+4
+  41 0010 1868     		ldr	r0, [r3]
+  42 0012 40F48070 		orr	r0, r0, #256
+  43 0016 1860     		str	r0, [r3]
+   8:Core/Scr/init.c ****     SET_BIT(RCC_GPIOA_OTYPER, RCC_GPIOA_OTYPER_P4_PP);  // настройка типа выхода
+  44              		.loc 1 8 5 view .LVU3
+   9:Core/Scr/init.c ****     SET_BIT(RCC_GPIOA_OSPEED, RCC_GPIOA_OSPEED_P4_MED); // настройка скорости ра
+  45              		.loc 1 9 5 view .LVU4
+  46 0018 9868     		ldr	r0, [r3, #8]
+  47 001a 40F48070 		orr	r0, r0, #256
+  48 001e 9860     		str	r0, [r3, #8]
+  10:Core/Scr/init.c ****     SET_BIT(RCC_GPIOA_PUPDR, RCC_GPIOA_PUPDR_P4_RST);   // настройка подтяжек/ст
+ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\ccqN2ELG.s 			page 2
 
 
-  46              		.loc 1 13 5 is_stmt 1 view .LVU5
-  14:Core/Scr/init.c ****     RCC_GPIOA_OSPEED |= RCC_GPIOA_OSPEED_P4_MED;
-  47              		.loc 1 14 5 view .LVU6
-  48 0018 9A68     		ldr	r2, [r3, #8]
-  49              		.loc 1 14 22 is_stmt 0 view .LVU7
-  50 001a 42F48072 		orr	r2, r2, #256
-  51 001e 9A60     		str	r2, [r3, #8]
-  15:Core/Scr/init.c ****     RCC_GPIOA_PUPDR |= RCC_GPIOA_PUPDR_P4_RST;
-  52              		.loc 1 15 5 is_stmt 1 view .LVU8
-  16:Core/Scr/init.c ****     RCC_GPIOA_BSRR |= P4_LOW;
-  53              		.loc 1 16 5 view .LVU9
-  54 0020 9A69     		ldr	r2, [r3, #24]
-  55              		.loc 1 16 20 is_stmt 0 view .LVU10
-  56 0022 42F48012 		orr	r2, r2, #1048576
-  57 0026 9A61     		str	r2, [r3, #24]
-  17:Core/Scr/init.c **** }
-  58              		.loc 1 17 1 view .LVU11
-  59 0028 7047     		bx	lr
-  60              	.L3:
-  61 002a 00BF     		.align	2
-  62              	.L2:
-  63 002c 00300240 		.word	1073885184
-  64 0030 00000240 		.word	1073872896
-  65              		.cfi_endproc
-  66              	.LFE130:
-  68              		.section	.text.Init_of_hand_writing,"ax",%progbits
-  69              		.align	1
-  70              		.global	Init_of_hand_writing
-  71              		.syntax unified
-  72              		.thumb
-  73              		.thumb_func
-  75              	Init_of_hand_writing:
-  76              	.LFB131:
-  18:Core/Scr/init.c **** 
-  19:Core/Scr/init.c **** void Init_of_hand_writing(void)
-  20:Core/Scr/init.c **** {
-  77              		.loc 1 20 1 is_stmt 1 view -0
-  78              		.cfi_startproc
-  79              		@ args = 0, pretend = 0, frame = 0
-  80              		@ frame_needed = 0, uses_anonymous_args = 0
-  81              		@ link register save eliminated.
-  21:Core/Scr/init.c ****     *(uint32_t *)(0x40023800UL + 0x30UL) |= 0x2UL;     // включение шины B
-  82              		.loc 1 21 5 view .LVU13
-  83 0000 0D4A     		ldr	r2, .L5
-  84 0002 D2F83038 		ldr	r3, [r2, #2096]
-  85              		.loc 1 21 42 is_stmt 0 view .LVU14
-  86 0006 43F00203 		orr	r3, r3, #2
-  87 000a C2F83038 		str	r3, [r2, #2096]
-  22:Core/Scr/init.c ****     *(uint32_t *)(0x40020400UL + 0x00UL) |= 0x1UL;     // режим работы B0 на выхо�
-  88              		.loc 1 22 5 is_stmt 1 view .LVU15
-  89 000e 0B4B     		ldr	r3, .L5+4
-  90 0010 D3F80024 		ldr	r2, [r3, #1024]
-  91              		.loc 1 22 42 is_stmt 0 view .LVU16
-  92 0014 42F00102 		orr	r2, r2, #1
-  93 0018 C3F80024 		str	r2, [r3, #1024]
-  23:Core/Scr/init.c ****     *(uint32_t *)(0x40020400UL + 0x04UL) |= 0x0UL;     // двухтактный выход
-  94              		.loc 1 23 5 is_stmt 1 view .LVU17
-ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s 			page 3
+  49              		.loc 1 10 5 view .LVU5
+  11:Core/Scr/init.c ****     SET_BIT(RCC_GPIOA_BSRR, P4_LOW);                    // задаем нулевой сигнал
+  50              		.loc 1 11 5 view .LVU6
+  51 0020 9869     		ldr	r0, [r3, #24]
+  52 0022 40F48010 		orr	r0, r0, #1048576
+  53 0026 9861     		str	r0, [r3, #24]
+  12:Core/Scr/init.c **** 
+  13:Core/Scr/init.c ****     // Прямое обращение к памяти
+  14:Core/Scr/init.c ****     *(uint32_t *)(0x40023800UL + 0x30UL) |= 0x2UL;     // включение тактировани
+  54              		.loc 1 14 5 view .LVU7
+  55              		.loc 1 14 42 is_stmt 0 view .LVU8
+  56 0028 42F00302 		orr	r2, r2, #3
+  57 002c C1F83028 		str	r2, [r1, #2096]
+  15:Core/Scr/init.c ****     *(uint32_t *)(0x40020400UL + 0x00UL) |= 0x1UL;     // настройка режима рабо�
+  58              		.loc 1 15 5 is_stmt 1 view .LVU9
+  59 0030 D3F80024 		ldr	r2, [r3, #1024]
+  60              		.loc 1 15 42 is_stmt 0 view .LVU10
+  61 0034 42F00102 		orr	r2, r2, #1
+  62 0038 C3F80024 		str	r2, [r3, #1024]
+  16:Core/Scr/init.c ****     *(uint32_t *)(0x40020400UL + 0x04UL) |= 0x0UL;     // настройка типа выхода 
+  63              		.loc 1 16 5 is_stmt 1 view .LVU11
+  17:Core/Scr/init.c ****     *(uint32_t *)(0x40020400UL + 0x08UL) |= 0x1UL;     // настройка скорости ра�
+  64              		.loc 1 17 5 view .LVU12
+  65 003c D3F80824 		ldr	r2, [r3, #1032]
+  66              		.loc 1 17 42 is_stmt 0 view .LVU13
+  67 0040 42F00102 		orr	r2, r2, #1
+  68 0044 C3F80824 		str	r2, [r3, #1032]
+  18:Core/Scr/init.c ****     *(uint32_t *)(0x40020400UL + 0x0CUL) |= 0x0UL;     // настраиваем подтяжки/�
+  69              		.loc 1 18 5 is_stmt 1 view .LVU14
+  19:Core/Scr/init.c ****     *(uint32_t *)(0x40020400UL + 0x18UL) |= 0x10000UL; // подаем нулевой сигнал 
+  70              		.loc 1 19 5 view .LVU15
+  71 0048 D3F81824 		ldr	r2, [r3, #1048]
+  72              		.loc 1 19 42 is_stmt 0 view .LVU16
+  73 004c 42F48032 		orr	r2, r2, #65536
+  74 0050 C3F81824 		str	r2, [r3, #1048]
+  20:Core/Scr/init.c **** 
+  21:Core/Scr/init.c ****     // Использование библиотеки CMSIS
+  22:Core/Scr/init.c ****     RCC->AHB1ENR |= RCC_AHB1ENR_GPIOCEN;                                   // включение т
+  75              		.loc 1 22 5 is_stmt 1 view .LVU17
+  76              		.loc 1 22 8 is_stmt 0 view .LVU18
+  77 0054 114A     		ldr	r2, .L2+8
+  78 0056 136B     		ldr	r3, [r2, #48]
+  79              		.loc 1 22 18 view .LVU19
+  80 0058 43F00403 		orr	r3, r3, #4
+  81 005c 1363     		str	r3, [r2, #48]
+  23:Core/Scr/init.c ****     GPIOC->MODER |= GPIO_MODER_MODE0_0 | GPIO_MODER_MODE1_0;               // настройка р
+  82              		.loc 1 23 5 is_stmt 1 view .LVU20
+  83              		.loc 1 23 10 is_stmt 0 view .LVU21
+  84 005e 104B     		ldr	r3, .L2+12
+  85 0060 1A68     		ldr	r2, [r3]
+  86              		.loc 1 23 18 view .LVU22
+  87 0062 42F00502 		orr	r2, r2, #5
+  88 0066 1A60     		str	r2, [r3]
+  24:Core/Scr/init.c ****     CLEAR_BIT(GPIOC->MODER, GPIO_MODER_MODE13);                            // явная настр
+  89              		.loc 1 24 5 is_stmt 1 view .LVU23
+  90 0068 1A68     		ldr	r2, [r3]
+  91 006a 22F04062 		bic	r2, r2, #201326592
+ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\ccqN2ELG.s 			page 3
 
 
-  24:Core/Scr/init.c ****     *(uint32_t *)(0x40020400UL + 0x08UL) |= 0x1UL;     // скорость средняя
-  95              		.loc 1 24 5 view .LVU18
-  96 001c D3F80824 		ldr	r2, [r3, #1032]
-  97              		.loc 1 24 42 is_stmt 0 view .LVU19
-  98 0020 42F00102 		orr	r2, r2, #1
-  99 0024 C3F80824 		str	r2, [r3, #1032]
-  25:Core/Scr/init.c ****     *(uint32_t *)(0x40020400UL + 0x0CUL) |= 0x0UL;     // выключение стяжек/под�
- 100              		.loc 1 25 5 is_stmt 1 view .LVU20
-  26:Core/Scr/init.c ****     *(uint32_t *)(0x40020400UL + 0x18UL) |= 0x10000UL; // выключение диода пере�
- 101              		.loc 1 26 5 view .LVU21
- 102 0028 D3F81824 		ldr	r2, [r3, #1048]
- 103              		.loc 1 26 42 is_stmt 0 view .LVU22
- 104 002c 42F48032 		orr	r2, r2, #65536
- 105 0030 C3F81824 		str	r2, [r3, #1048]
-  27:Core/Scr/init.c **** }
- 106              		.loc 1 27 1 view .LVU23
- 107 0034 7047     		bx	lr
- 108              	.L6:
- 109 0036 00BF     		.align	2
- 110              	.L5:
- 111 0038 00300240 		.word	1073885184
- 112 003c 00000240 		.word	1073872896
- 113              		.cfi_endproc
- 114              	.LFE131:
- 116              		.section	.text.Init_with_macroses,"ax",%progbits
- 117              		.align	1
- 118              		.global	Init_with_macroses
- 119              		.syntax unified
- 120              		.thumb
- 121              		.thumb_func
- 123              	Init_with_macroses:
- 124              	.LFB132:
-  28:Core/Scr/init.c **** 
-  29:Core/Scr/init.c **** void Init_with_macroses(void)
-  30:Core/Scr/init.c **** {
- 125              		.loc 1 30 1 is_stmt 1 view -0
- 126              		.cfi_startproc
- 127              		@ args = 0, pretend = 0, frame = 0
- 128              		@ frame_needed = 0, uses_anonymous_args = 0
- 129              		@ link register save eliminated.
-  31:Core/Scr/init.c ****     RCC->AHB1ENR |= RCC_AHB1ENR_GPIOCEN;                     // включение шины C
- 130              		.loc 1 31 5 view .LVU25
- 131              		.loc 1 31 8 is_stmt 0 view .LVU26
- 132 0000 0F4A     		ldr	r2, .L8
- 133 0002 136B     		ldr	r3, [r2, #48]
- 134              		.loc 1 31 18 view .LVU27
- 135 0004 43F00403 		orr	r3, r3, #4
- 136 0008 1363     		str	r3, [r2, #48]
-  32:Core/Scr/init.c ****     GPIOC->MODER |= GPIO_MODER_MODE0_0 | GPIO_MODER_MODE1_0; // режим работы C0 и C1 н
- 137              		.loc 1 32 5 is_stmt 1 view .LVU28
- 138              		.loc 1 32 10 is_stmt 0 view .LVU29
- 139 000a 0E4B     		ldr	r3, .L8+4
- 140 000c 1A68     		ldr	r2, [r3]
- 141              		.loc 1 32 18 view .LVU30
- 142 000e 42F00502 		orr	r2, r2, #5
- 143 0012 1A60     		str	r2, [r3]
-  33:Core/Scr/init.c ****     CLEAR_BIT(GPIOC->MODER, GPIO_MODER_MODE13);
-ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s 			page 4
+  92 006e 1A60     		str	r2, [r3]
+  25:Core/Scr/init.c ****     CLEAR_BIT(GPIOC->OTYPER, GPIO_OTYPER_OT0 + GPIO_OTYPER_OT1);           // настройка т
+  93              		.loc 1 25 5 view .LVU24
+  94 0070 5A68     		ldr	r2, [r3, #4]
+  95 0072 22F00302 		bic	r2, r2, #3
+  96 0076 5A60     		str	r2, [r3, #4]
+  26:Core/Scr/init.c ****     GPIOC->OSPEEDR |= GPIO_OSPEEDER_OSPEEDR0_0 + GPIO_OSPEEDER_OSPEEDR1_0; // настройка с
+  97              		.loc 1 26 5 view .LVU25
+  98              		.loc 1 26 10 is_stmt 0 view .LVU26
+  99 0078 9A68     		ldr	r2, [r3, #8]
+ 100              		.loc 1 26 20 view .LVU27
+ 101 007a 42F00502 		orr	r2, r2, #5
+ 102 007e 9A60     		str	r2, [r3, #8]
+  27:Core/Scr/init.c ****     CLEAR_BIT(GPIOC->PUPDR, GPIO_PUPDR_PUPDR0 | GPIO_PUPDR_PUPDR1);        // настраивае�
+ 103              		.loc 1 27 5 is_stmt 1 view .LVU28
+ 104 0080 DA68     		ldr	r2, [r3, #12]
+ 105 0082 22F00F02 		bic	r2, r2, #15
+ 106 0086 DA60     		str	r2, [r3, #12]
+  28:Core/Scr/init.c ****                                                                            // на режим No Pu
+  29:Core/Scr/init.c ****     GPIOC->BSRR |= GPIO_BSRR_BR0 | GPIO_BSRR_BR1;                          // выключение 
+ 107              		.loc 1 29 5 view .LVU29
+ 108              		.loc 1 29 10 is_stmt 0 view .LVU30
+ 109 0088 9A69     		ldr	r2, [r3, #24]
+ 110              		.loc 1 29 17 view .LVU31
+ 111 008a 42F44032 		orr	r2, r2, #196608
+ 112 008e 9A61     		str	r2, [r3, #24]
+  30:Core/Scr/init.c **** }
+ 113              		.loc 1 30 1 view .LVU32
+ 114 0090 7047     		bx	lr
+ 115              	.L3:
+ 116 0092 00BF     		.align	2
+ 117              	.L2:
+ 118 0094 00300240 		.word	1073885184
+ 119 0098 00000240 		.word	1073872896
+ 120 009c 00380240 		.word	1073887232
+ 121 00a0 00080240 		.word	1073874944
+ 122              		.cfi_endproc
+ 123              	.LFE130:
+ 125              		.section	.text.time_skeeper,"ax",%progbits
+ 126              		.align	1
+ 127              		.global	time_skeeper
+ 128              		.syntax unified
+ 129              		.thumb
+ 130              		.thumb_func
+ 132              	time_skeeper:
+ 133              	.LFB131:
+  31:Core/Scr/init.c **** 
+  32:Core/Scr/init.c **** uint8_t time_skeeper(void)
+  33:Core/Scr/init.c **** {
+ 134              		.loc 1 33 1 is_stmt 1 view -0
+ 135              		.cfi_startproc
+ 136              		@ args = 0, pretend = 0, frame = 0
+ 137              		@ frame_needed = 0, uses_anonymous_args = 0
+ 138              		@ link register save eliminated.
+  34:Core/Scr/init.c ****     int pusher = 1;
+ 139              		.loc 1 34 5 view .LVU34
+ 140              	.LVL0:
+ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\ccqN2ELG.s 			page 4
 
 
- 144              		.loc 1 33 5 is_stmt 1 view .LVU31
- 145 0014 1A68     		ldr	r2, [r3]
- 146 0016 22F04062 		bic	r2, r2, #201326592
- 147 001a 1A60     		str	r2, [r3]
-  34:Core/Scr/init.c ****     CLEAR_BIT(GPIOC->OTYPER, GPIO_OTYPER_OT0 + GPIO_OTYPER_OT1);           // двухтактны�
- 148              		.loc 1 34 5 view .LVU32
- 149 001c 5A68     		ldr	r2, [r3, #4]
- 150 001e 22F00302 		bic	r2, r2, #3
- 151 0022 5A60     		str	r2, [r3, #4]
-  35:Core/Scr/init.c ****     GPIOC->OSPEEDR |= GPIO_OSPEEDER_OSPEEDR0_0 + GPIO_OSPEEDER_OSPEEDR1_0; // скорость ср
- 152              		.loc 1 35 5 view .LVU33
- 153              		.loc 1 35 10 is_stmt 0 view .LVU34
- 154 0024 9A68     		ldr	r2, [r3, #8]
- 155              		.loc 1 35 20 view .LVU35
- 156 0026 42F00502 		orr	r2, r2, #5
- 157 002a 9A60     		str	r2, [r3, #8]
-  36:Core/Scr/init.c ****     CLEAR_BIT(GPIOC->PUPDR, GPIO_PUPDR_PUPDR0 | GPIO_PUPDR_PUPDR1);        // выключение 
- 158              		.loc 1 36 5 is_stmt 1 view .LVU36
- 159 002c DA68     		ldr	r2, [r3, #12]
- 160 002e 22F00F02 		bic	r2, r2, #15
- 161 0032 DA60     		str	r2, [r3, #12]
-  37:Core/Scr/init.c ****     GPIOC->BSRR |= GPIO_BSRR_BR0 | GPIO_BSRR_BR1;                          // выключение 
- 162              		.loc 1 37 5 view .LVU37
- 163              		.loc 1 37 10 is_stmt 0 view .LVU38
- 164 0034 9A69     		ldr	r2, [r3, #24]
- 165              		.loc 1 37 17 view .LVU39
- 166 0036 42F44032 		orr	r2, r2, #196608
- 167 003a 9A61     		str	r2, [r3, #24]
-  38:Core/Scr/init.c **** }
- 168              		.loc 1 38 1 view .LVU40
- 169 003c 7047     		bx	lr
- 170              	.L9:
- 171 003e 00BF     		.align	2
- 172              	.L8:
- 173 0040 00380240 		.word	1073887232
- 174 0044 00080240 		.word	1073874944
- 175              		.cfi_endproc
- 176              	.LFE132:
- 178              		.section	.text.time_skeeper,"ax",%progbits
- 179              		.align	1
- 180              		.global	time_skeeper
- 181              		.syntax unified
- 182              		.thumb
- 183              		.thumb_func
- 185              	time_skeeper:
- 186              	.LFB133:
-  39:Core/Scr/init.c **** 
-  40:Core/Scr/init.c **** uint8_t time_skeeper(void)
-  41:Core/Scr/init.c **** {
- 187              		.loc 1 41 1 is_stmt 1 view -0
- 188              		.cfi_startproc
- 189              		@ args = 0, pretend = 0, frame = 0
- 190              		@ frame_needed = 0, uses_anonymous_args = 0
- 191              		@ link register save eliminated.
-  42:Core/Scr/init.c ****     int pusher = 1;
- 192              		.loc 1 42 5 view .LVU42
- 193              	.LVL0:
-ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s 			page 5
+  35:Core/Scr/init.c ****     int smth = 0;
+ 141              		.loc 1 35 5 view .LVU35
+  36:Core/Scr/init.c ****     for (int i = 0; i < 1; i++)
+ 142              		.loc 1 36 5 view .LVU36
+ 143              	.LBB2:
+ 144              		.loc 1 36 10 view .LVU37
+ 145              		.loc 1 36 14 is_stmt 0 view .LVU38
+ 146 0000 0023     		movs	r3, #0
+ 147              	.LVL1:
+ 148              	.L5:
+ 149              		.loc 1 36 23 is_stmt 1 discriminator 1 view .LVU39
+ 150 0002 002B     		cmp	r3, #0
+ 151 0004 01DD     		ble	.L6
+ 152              	.LBE2:
+  37:Core/Scr/init.c ****     {
+  38:Core/Scr/init.c ****         smth++;
+  39:Core/Scr/init.c ****     }
+  40:Core/Scr/init.c ****     return pusher;
+ 153              		.loc 1 40 5 view .LVU40
+  41:Core/Scr/init.c **** }
+ 154              		.loc 1 41 1 is_stmt 0 view .LVU41
+ 155 0006 0120     		movs	r0, #1
+ 156 0008 7047     		bx	lr
+ 157              	.L6:
+ 158              	.LBB3:
+  38:Core/Scr/init.c ****     }
+ 159              		.loc 1 38 9 is_stmt 1 view .LVU42
+  36:Core/Scr/init.c ****     {
+ 160              		.loc 1 36 29 discriminator 3 view .LVU43
+ 161 000a 0133     		adds	r3, r3, #1
+ 162              	.LVL2:
+  36:Core/Scr/init.c ****     {
+ 163              		.loc 1 36 29 is_stmt 0 discriminator 3 view .LVU44
+ 164 000c F9E7     		b	.L5
+ 165              	.LBE3:
+ 166              		.cfi_endproc
+ 167              	.LFE131:
+ 169              		.section	.text.diode_mode,"ax",%progbits
+ 170              		.align	1
+ 171              		.global	diode_mode
+ 172              		.syntax unified
+ 173              		.thumb
+ 174              		.thumb_func
+ 176              	diode_mode:
+ 177              	.LVL3:
+ 178              	.LFB132:
+  42:Core/Scr/init.c **** 
+  43:Core/Scr/init.c **** uint8_t diode_mode(uint8_t pusher, uint8_t but_check)
+  44:Core/Scr/init.c **** {
+ 179              		.loc 1 44 1 is_stmt 1 view -0
+ 180              		.cfi_startproc
+ 181              		@ args = 0, pretend = 0, frame = 0
+ 182              		@ frame_needed = 0, uses_anonymous_args = 0
+ 183              		@ link register save eliminated.
+  45:Core/Scr/init.c ****     but_check++;
+ 184              		.loc 1 45 5 view .LVU46
+ 185              		.loc 1 45 14 is_stmt 0 view .LVU47
+ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\ccqN2ELG.s 			page 5
 
 
-  43:Core/Scr/init.c ****     int smth = 0;
- 194              		.loc 1 43 5 view .LVU43
-  44:Core/Scr/init.c ****     for (int i = 0; i < 1; i++)
- 195              		.loc 1 44 5 view .LVU44
- 196              	.LBB2:
- 197              		.loc 1 44 10 view .LVU45
- 198              		.loc 1 44 14 is_stmt 0 view .LVU46
- 199 0000 0023     		movs	r3, #0
- 200              	.LVL1:
- 201              	.L11:
- 202              		.loc 1 44 23 is_stmt 1 discriminator 1 view .LVU47
- 203 0002 002B     		cmp	r3, #0
- 204 0004 01DD     		ble	.L12
- 205              	.LBE2:
-  45:Core/Scr/init.c ****     {
-  46:Core/Scr/init.c ****         smth++;
-  47:Core/Scr/init.c ****     }
-  48:Core/Scr/init.c ****     return pusher;
- 206              		.loc 1 48 5 view .LVU48
-  49:Core/Scr/init.c **** }
- 207              		.loc 1 49 1 is_stmt 0 view .LVU49
- 208 0006 0120     		movs	r0, #1
- 209 0008 7047     		bx	lr
- 210              	.L12:
- 211              	.LBB3:
-  46:Core/Scr/init.c ****     }
- 212              		.loc 1 46 9 is_stmt 1 view .LVU50
-  44:Core/Scr/init.c ****     {
- 213              		.loc 1 44 29 discriminator 3 view .LVU51
- 214 000a 0133     		adds	r3, r3, #1
- 215              	.LVL2:
-  44:Core/Scr/init.c ****     {
- 216              		.loc 1 44 29 is_stmt 0 discriminator 3 view .LVU52
- 217 000c F9E7     		b	.L11
- 218              	.LBE3:
- 219              		.cfi_endproc
- 220              	.LFE133:
- 222              		.section	.text.diode_mode,"ax",%progbits
- 223              		.align	1
- 224              		.global	diode_mode
- 225              		.syntax unified
- 226              		.thumb
- 227              		.thumb_func
- 229              	diode_mode:
- 230              	.LVL3:
- 231              	.LFB134:
-  50:Core/Scr/init.c **** 
-  51:Core/Scr/init.c **** uint8_t diode_mode(uint8_t pusher, uint8_t but_check)
-  52:Core/Scr/init.c **** {
- 232              		.loc 1 52 1 is_stmt 1 view -0
- 233              		.cfi_startproc
- 234              		@ args = 0, pretend = 0, frame = 0
- 235              		@ frame_needed = 0, uses_anonymous_args = 0
- 236              		@ link register save eliminated.
-  53:Core/Scr/init.c ****     but_check++;
- 237              		.loc 1 53 5 view .LVU54
- 238              		.loc 1 53 14 is_stmt 0 view .LVU55
-ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s 			page 6
+ 186 0000 481C     		adds	r0, r1, #1
+ 187              	.LVL4:
+ 188              		.loc 1 45 14 view .LVU48
+ 189 0002 C0B2     		uxtb	r0, r0
+ 190              	.LVL5:
+  46:Core/Scr/init.c ****     if (but_check > 5)
+ 191              		.loc 1 46 5 is_stmt 1 view .LVU49
+ 192              		.loc 1 46 8 is_stmt 0 view .LVU50
+ 193 0004 0528     		cmp	r0, #5
+ 194 0006 00D9     		bls	.L8
+  47:Core/Scr/init.c ****     {
+  48:Core/Scr/init.c ****         but_check = 0;
+ 195              		.loc 1 48 19 view .LVU51
+ 196 0008 0020     		movs	r0, #0
+ 197              	.LVL6:
+ 198              	.L8:
+  49:Core/Scr/init.c ****     }
+  50:Core/Scr/init.c ****     return but_check;
+ 199              		.loc 1 50 5 is_stmt 1 view .LVU52
+  51:Core/Scr/init.c **** }
+ 200              		.loc 1 51 1 is_stmt 0 view .LVU53
+ 201 000a 7047     		bx	lr
+ 202              		.cfi_endproc
+ 203              	.LFE132:
+ 205              		.section	.text.main_process,"ax",%progbits
+ 206              		.align	1
+ 207              		.global	main_process
+ 208              		.syntax unified
+ 209              		.thumb
+ 210              		.thumb_func
+ 212              	main_process:
+ 213              	.LVL7:
+ 214              	.LFB133:
+  52:Core/Scr/init.c **** 
+  53:Core/Scr/init.c **** void main_process(uint8_t but_check)
+  54:Core/Scr/init.c **** {
+ 215              		.loc 1 54 1 is_stmt 1 view -0
+ 216              		.cfi_startproc
+ 217              		@ args = 0, pretend = 0, frame = 0
+ 218              		@ frame_needed = 0, uses_anonymous_args = 0
+ 219              		@ link register save eliminated.
+  55:Core/Scr/init.c ****     switch (but_check)
+ 220              		.loc 1 55 5 view .LVU55
+ 221 0000 0528     		cmp	r0, #5
+ 222 0002 6DD8     		bhi	.L10
+ 223 0004 DFE800F0 		tbb	[pc, r0]
+ 224              	.L13:
+ 225 0008 03       		.byte	(.L18-.L13)/2
+ 226 0009 14       		.byte	(.L17-.L13)/2
+ 227 000a 25       		.byte	(.L16-.L13)/2
+ 228 000b 36       		.byte	(.L15-.L13)/2
+ 229 000c 49       		.byte	(.L14-.L13)/2
+ 230 000d 5C       		.byte	(.L12-.L13)/2
+ 231              		.p2align 1
+ 232              	.L18:
+  56:Core/Scr/init.c ****     {
+  57:Core/Scr/init.c ****     case 0:
+ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\ccqN2ELG.s 			page 6
 
 
- 239 0000 481C     		adds	r0, r1, #1
- 240              	.LVL4:
- 241              		.loc 1 53 14 view .LVU56
- 242 0002 C0B2     		uxtb	r0, r0
- 243              	.LVL5:
-  54:Core/Scr/init.c ****     if (but_check > 5)
- 244              		.loc 1 54 5 is_stmt 1 view .LVU57
- 245              		.loc 1 54 8 is_stmt 0 view .LVU58
- 246 0004 0528     		cmp	r0, #5
- 247 0006 00D9     		bls	.L14
-  55:Core/Scr/init.c ****     {
-  56:Core/Scr/init.c ****         but_check = 0;
- 248              		.loc 1 56 19 view .LVU59
- 249 0008 0020     		movs	r0, #0
- 250              	.LVL6:
- 251              	.L14:
-  57:Core/Scr/init.c ****     }
-  58:Core/Scr/init.c ****     return but_check;
- 252              		.loc 1 58 5 is_stmt 1 view .LVU60
-  59:Core/Scr/init.c **** }
- 253              		.loc 1 59 1 is_stmt 0 view .LVU61
- 254 000a 7047     		bx	lr
- 255              		.cfi_endproc
- 256              	.LFE134:
- 258              		.section	.text.main_process,"ax",%progbits
- 259              		.align	1
- 260              		.global	main_process
- 261              		.syntax unified
- 262              		.thumb
- 263              		.thumb_func
- 265              	main_process:
- 266              	.LVL7:
- 267              	.LFB135:
-  60:Core/Scr/init.c **** 
-  61:Core/Scr/init.c **** void main_process(uint8_t but_check)
-  62:Core/Scr/init.c **** {
- 268              		.loc 1 62 1 is_stmt 1 view -0
- 269              		.cfi_startproc
- 270              		@ args = 0, pretend = 0, frame = 0
- 271              		@ frame_needed = 0, uses_anonymous_args = 0
- 272              		@ link register save eliminated.
-  63:Core/Scr/init.c ****     switch (but_check)
- 273              		.loc 1 63 5 view .LVU63
- 274 0000 0528     		cmp	r0, #5
- 275 0002 6DD8     		bhi	.L16
- 276 0004 DFE800F0 		tbb	[pc, r0]
- 277              	.L19:
- 278 0008 03       		.byte	(.L24-.L19)/2
- 279 0009 14       		.byte	(.L23-.L19)/2
- 280 000a 25       		.byte	(.L22-.L19)/2
- 281 000b 36       		.byte	(.L21-.L19)/2
- 282 000c 49       		.byte	(.L20-.L19)/2
- 283 000d 5C       		.byte	(.L18-.L19)/2
- 284              		.p2align 1
- 285              	.L24:
-  64:Core/Scr/init.c ****         {
-  65:Core/Scr/init.c ****         case 0:
-ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s 			page 7
+  58:Core/Scr/init.c ****         RCC_GPIOA_BSRR |= P4_LOW;
+ 233              		.loc 1 58 9 view .LVU56
+ 234 000e 354B     		ldr	r3, .L20
+ 235 0010 9A69     		ldr	r2, [r3, #24]
+ 236              		.loc 1 58 24 is_stmt 0 view .LVU57
+ 237 0012 42F48012 		orr	r2, r2, #1048576
+ 238 0016 9A61     		str	r2, [r3, #24]
+  59:Core/Scr/init.c ****         *(uint32_t *)(0x40020400UL + 0x18UL) |= 0x10000UL;
+ 239              		.loc 1 59 9 is_stmt 1 view .LVU58
+ 240 0018 D3F81824 		ldr	r2, [r3, #1048]
+ 241              		.loc 1 59 46 is_stmt 0 view .LVU59
+ 242 001c 42F48032 		orr	r2, r2, #65536
+ 243 0020 C3F81824 		str	r2, [r3, #1048]
+  60:Core/Scr/init.c ****         GPIOC->BSRR |= GPIO_BSRR_BR0 + GPIO_BSRR_BR1;
+ 244              		.loc 1 60 9 is_stmt 1 view .LVU60
+ 245              		.loc 1 60 14 is_stmt 0 view .LVU61
+ 246 0024 304A     		ldr	r2, .L20+4
+ 247 0026 9369     		ldr	r3, [r2, #24]
+ 248              		.loc 1 60 21 view .LVU62
+ 249 0028 43F44033 		orr	r3, r3, #196608
+ 250 002c 9361     		str	r3, [r2, #24]
+  61:Core/Scr/init.c ****         break;
+ 251              		.loc 1 61 9 is_stmt 1 view .LVU63
+ 252 002e 7047     		bx	lr
+ 253              	.L17:
+  62:Core/Scr/init.c ****     case 1:
+  63:Core/Scr/init.c ****         RCC_GPIOA_BSRR |= P4_HIGH;
+ 254              		.loc 1 63 9 view .LVU64
+ 255 0030 2C4B     		ldr	r3, .L20
+ 256 0032 9A69     		ldr	r2, [r3, #24]
+ 257              		.loc 1 63 24 is_stmt 0 view .LVU65
+ 258 0034 42F01002 		orr	r2, r2, #16
+ 259 0038 9A61     		str	r2, [r3, #24]
+  64:Core/Scr/init.c ****         *(uint32_t *)(0x40020400UL + 0x18UL) |= 0x10000UL;
+ 260              		.loc 1 64 9 is_stmt 1 view .LVU66
+ 261 003a D3F81824 		ldr	r2, [r3, #1048]
+ 262              		.loc 1 64 46 is_stmt 0 view .LVU67
+ 263 003e 42F48032 		orr	r2, r2, #65536
+ 264 0042 C3F81824 		str	r2, [r3, #1048]
+  65:Core/Scr/init.c ****         GPIOC->BSRR |= GPIO_BSRR_BR0 + GPIO_BSRR_BR1;
+ 265              		.loc 1 65 9 is_stmt 1 view .LVU68
+ 266              		.loc 1 65 14 is_stmt 0 view .LVU69
+ 267 0046 284A     		ldr	r2, .L20+4
+ 268 0048 9369     		ldr	r3, [r2, #24]
+ 269              		.loc 1 65 21 view .LVU70
+ 270 004a 43F44033 		orr	r3, r3, #196608
+ 271 004e 9361     		str	r3, [r2, #24]
+  66:Core/Scr/init.c ****         break;
+ 272              		.loc 1 66 9 is_stmt 1 view .LVU71
+ 273 0050 7047     		bx	lr
+ 274              	.L16:
+  67:Core/Scr/init.c ****     case 2:
+  68:Core/Scr/init.c ****         RCC_GPIOA_BSRR |= P4_LOW;
+ 275              		.loc 1 68 9 view .LVU72
+ 276 0052 244B     		ldr	r3, .L20
+ 277 0054 9A69     		ldr	r2, [r3, #24]
+ 278              		.loc 1 68 24 is_stmt 0 view .LVU73
+ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\ccqN2ELG.s 			page 7
 
 
-  66:Core/Scr/init.c ****             RCC_GPIOA_BSRR |= P4_LOW;
- 286              		.loc 1 66 13 view .LVU64
- 287 000e 354B     		ldr	r3, .L26
- 288 0010 9A69     		ldr	r2, [r3, #24]
- 289              		.loc 1 66 28 is_stmt 0 view .LVU65
- 290 0012 42F48012 		orr	r2, r2, #1048576
- 291 0016 9A61     		str	r2, [r3, #24]
-  67:Core/Scr/init.c ****             *(uint32_t *)(0x40020400UL + 0x18UL) |= 0x10000UL;
- 292              		.loc 1 67 13 is_stmt 1 view .LVU66
- 293 0018 D3F81824 		ldr	r2, [r3, #1048]
- 294              		.loc 1 67 50 is_stmt 0 view .LVU67
- 295 001c 42F48032 		orr	r2, r2, #65536
- 296 0020 C3F81824 		str	r2, [r3, #1048]
-  68:Core/Scr/init.c ****             GPIOC->BSRR |= GPIO_BSRR_BR0 + GPIO_BSRR_BR1;
- 297              		.loc 1 68 13 is_stmt 1 view .LVU68
- 298              		.loc 1 68 18 is_stmt 0 view .LVU69
- 299 0024 304A     		ldr	r2, .L26+4
- 300 0026 9369     		ldr	r3, [r2, #24]
- 301              		.loc 1 68 25 view .LVU70
- 302 0028 43F44033 		orr	r3, r3, #196608
- 303 002c 9361     		str	r3, [r2, #24]
-  69:Core/Scr/init.c ****             break;
- 304              		.loc 1 69 13 is_stmt 1 view .LVU71
- 305 002e 7047     		bx	lr
- 306              	.L23:
-  70:Core/Scr/init.c ****         case 1:
-  71:Core/Scr/init.c ****             RCC_GPIOA_BSRR |= P4_HIGH;
- 307              		.loc 1 71 13 view .LVU72
- 308 0030 2C4B     		ldr	r3, .L26
- 309 0032 9A69     		ldr	r2, [r3, #24]
- 310              		.loc 1 71 28 is_stmt 0 view .LVU73
- 311 0034 42F01002 		orr	r2, r2, #16
- 312 0038 9A61     		str	r2, [r3, #24]
-  72:Core/Scr/init.c ****             *(uint32_t *)(0x40020400UL + 0x18UL) |= 0x10000UL;
- 313              		.loc 1 72 13 is_stmt 1 view .LVU74
- 314 003a D3F81824 		ldr	r2, [r3, #1048]
- 315              		.loc 1 72 50 is_stmt 0 view .LVU75
- 316 003e 42F48032 		orr	r2, r2, #65536
- 317 0042 C3F81824 		str	r2, [r3, #1048]
-  73:Core/Scr/init.c ****             GPIOC->BSRR |= GPIO_BSRR_BR0 + GPIO_BSRR_BR1;
- 318              		.loc 1 73 13 is_stmt 1 view .LVU76
- 319              		.loc 1 73 18 is_stmt 0 view .LVU77
- 320 0046 284A     		ldr	r2, .L26+4
- 321 0048 9369     		ldr	r3, [r2, #24]
- 322              		.loc 1 73 25 view .LVU78
- 323 004a 43F44033 		orr	r3, r3, #196608
- 324 004e 9361     		str	r3, [r2, #24]
-  74:Core/Scr/init.c ****             break;
- 325              		.loc 1 74 13 is_stmt 1 view .LVU79
- 326 0050 7047     		bx	lr
- 327              	.L22:
-  75:Core/Scr/init.c ****         case 2:
-  76:Core/Scr/init.c ****             RCC_GPIOA_BSRR |= P4_LOW;
- 328              		.loc 1 76 13 view .LVU80
- 329 0052 244B     		ldr	r3, .L26
- 330 0054 9A69     		ldr	r2, [r3, #24]
- 331              		.loc 1 76 28 is_stmt 0 view .LVU81
-ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s 			page 8
+ 279 0056 42F48012 		orr	r2, r2, #1048576
+ 280 005a 9A61     		str	r2, [r3, #24]
+  69:Core/Scr/init.c ****         *(uint32_t *)(0x40020400UL + 0x18UL) |= 0x1UL;
+ 281              		.loc 1 69 9 is_stmt 1 view .LVU74
+ 282 005c D3F81824 		ldr	r2, [r3, #1048]
+ 283              		.loc 1 69 46 is_stmt 0 view .LVU75
+ 284 0060 42F00102 		orr	r2, r2, #1
+ 285 0064 C3F81824 		str	r2, [r3, #1048]
+  70:Core/Scr/init.c ****         GPIOC->BSRR |= GPIO_BSRR_BR0 + GPIO_BSRR_BR1;
+ 286              		.loc 1 70 9 is_stmt 1 view .LVU76
+ 287              		.loc 1 70 14 is_stmt 0 view .LVU77
+ 288 0068 1F4A     		ldr	r2, .L20+4
+ 289 006a 9369     		ldr	r3, [r2, #24]
+ 290              		.loc 1 70 21 view .LVU78
+ 291 006c 43F44033 		orr	r3, r3, #196608
+ 292 0070 9361     		str	r3, [r2, #24]
+  71:Core/Scr/init.c ****         break;
+ 293              		.loc 1 71 9 is_stmt 1 view .LVU79
+ 294 0072 7047     		bx	lr
+ 295              	.L15:
+  72:Core/Scr/init.c ****     case 3:
+  73:Core/Scr/init.c ****         RCC_GPIOA_BSRR |= P4_LOW;
+ 296              		.loc 1 73 9 view .LVU80
+ 297 0074 1B4B     		ldr	r3, .L20
+ 298 0076 9A69     		ldr	r2, [r3, #24]
+ 299              		.loc 1 73 24 is_stmt 0 view .LVU81
+ 300 0078 42F48012 		orr	r2, r2, #1048576
+ 301 007c 9A61     		str	r2, [r3, #24]
+  74:Core/Scr/init.c ****         *(uint32_t *)(0x40020400UL + 0x18UL) |= 0x10000UL;
+ 302              		.loc 1 74 9 is_stmt 1 view .LVU82
+ 303 007e D3F81824 		ldr	r2, [r3, #1048]
+ 304              		.loc 1 74 46 is_stmt 0 view .LVU83
+ 305 0082 42F48032 		orr	r2, r2, #65536
+ 306 0086 C3F81824 		str	r2, [r3, #1048]
+  75:Core/Scr/init.c ****         GPIOC->BSRR |= GPIO_BSRR_BR0 + GPIO_BSRR_BS1;
+ 307              		.loc 1 75 9 is_stmt 1 view .LVU84
+ 308              		.loc 1 75 14 is_stmt 0 view .LVU85
+ 309 008a 174A     		ldr	r2, .L20+4
+ 310 008c 9369     		ldr	r3, [r2, #24]
+ 311              		.loc 1 75 21 view .LVU86
+ 312 008e 43F48033 		orr	r3, r3, #65536
+ 313 0092 43F00203 		orr	r3, r3, #2
+ 314 0096 9361     		str	r3, [r2, #24]
+  76:Core/Scr/init.c ****         break;
+ 315              		.loc 1 76 9 is_stmt 1 view .LVU87
+ 316 0098 7047     		bx	lr
+ 317              	.L14:
+  77:Core/Scr/init.c ****         break;
+  78:Core/Scr/init.c ****     case 4:
+  79:Core/Scr/init.c ****         RCC_GPIOA_BSRR |= P4_LOW;
+ 318              		.loc 1 79 9 view .LVU88
+ 319 009a 124B     		ldr	r3, .L20
+ 320 009c 9A69     		ldr	r2, [r3, #24]
+ 321              		.loc 1 79 24 is_stmt 0 view .LVU89
+ 322 009e 42F48012 		orr	r2, r2, #1048576
+ 323 00a2 9A61     		str	r2, [r3, #24]
+  80:Core/Scr/init.c ****         *(uint32_t *)(0x40020400UL + 0x18UL) |= 0x10000UL;
+ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\ccqN2ELG.s 			page 8
 
 
- 332 0056 42F48012 		orr	r2, r2, #1048576
- 333 005a 9A61     		str	r2, [r3, #24]
-  77:Core/Scr/init.c ****             *(uint32_t *)(0x40020400UL + 0x18UL) |= 0x1UL;
- 334              		.loc 1 77 13 is_stmt 1 view .LVU82
- 335 005c D3F81824 		ldr	r2, [r3, #1048]
- 336              		.loc 1 77 50 is_stmt 0 view .LVU83
- 337 0060 42F00102 		orr	r2, r2, #1
- 338 0064 C3F81824 		str	r2, [r3, #1048]
-  78:Core/Scr/init.c ****             GPIOC->BSRR |= GPIO_BSRR_BR0 + GPIO_BSRR_BR1;
- 339              		.loc 1 78 13 is_stmt 1 view .LVU84
- 340              		.loc 1 78 18 is_stmt 0 view .LVU85
- 341 0068 1F4A     		ldr	r2, .L26+4
- 342 006a 9369     		ldr	r3, [r2, #24]
- 343              		.loc 1 78 25 view .LVU86
- 344 006c 43F44033 		orr	r3, r3, #196608
- 345 0070 9361     		str	r3, [r2, #24]
-  79:Core/Scr/init.c ****             break;
- 346              		.loc 1 79 13 is_stmt 1 view .LVU87
- 347 0072 7047     		bx	lr
- 348              	.L21:
-  80:Core/Scr/init.c ****         case 3:
-  81:Core/Scr/init.c ****             RCC_GPIOA_BSRR |= P4_LOW;
- 349              		.loc 1 81 13 view .LVU88
- 350 0074 1B4B     		ldr	r3, .L26
- 351 0076 9A69     		ldr	r2, [r3, #24]
- 352              		.loc 1 81 28 is_stmt 0 view .LVU89
- 353 0078 42F48012 		orr	r2, r2, #1048576
- 354 007c 9A61     		str	r2, [r3, #24]
-  82:Core/Scr/init.c ****             *(uint32_t *)(0x40020400UL + 0x18UL) |= 0x10000UL;
- 355              		.loc 1 82 13 is_stmt 1 view .LVU90
- 356 007e D3F81824 		ldr	r2, [r3, #1048]
- 357              		.loc 1 82 50 is_stmt 0 view .LVU91
- 358 0082 42F48032 		orr	r2, r2, #65536
- 359 0086 C3F81824 		str	r2, [r3, #1048]
-  83:Core/Scr/init.c ****             GPIOC->BSRR |= GPIO_BSRR_BR0 + GPIO_BSRR_BS1;
- 360              		.loc 1 83 13 is_stmt 1 view .LVU92
- 361              		.loc 1 83 18 is_stmt 0 view .LVU93
- 362 008a 174A     		ldr	r2, .L26+4
- 363 008c 9369     		ldr	r3, [r2, #24]
- 364              		.loc 1 83 25 view .LVU94
- 365 008e 43F48033 		orr	r3, r3, #65536
- 366 0092 43F00203 		orr	r3, r3, #2
- 367 0096 9361     		str	r3, [r2, #24]
-  84:Core/Scr/init.c ****             break;
- 368              		.loc 1 84 13 is_stmt 1 view .LVU95
- 369 0098 7047     		bx	lr
- 370              	.L20:
-  85:Core/Scr/init.c ****             break;
-  86:Core/Scr/init.c ****         case 4:
-  87:Core/Scr/init.c ****             RCC_GPIOA_BSRR |= P4_LOW;
- 371              		.loc 1 87 13 view .LVU96
- 372 009a 124B     		ldr	r3, .L26
- 373 009c 9A69     		ldr	r2, [r3, #24]
- 374              		.loc 1 87 28 is_stmt 0 view .LVU97
- 375 009e 42F48012 		orr	r2, r2, #1048576
- 376 00a2 9A61     		str	r2, [r3, #24]
-  88:Core/Scr/init.c ****             *(uint32_t *)(0x40020400UL + 0x18UL) |= 0x10000UL;
-ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s 			page 9
+ 324              		.loc 1 80 9 is_stmt 1 view .LVU90
+ 325 00a4 D3F81824 		ldr	r2, [r3, #1048]
+ 326              		.loc 1 80 46 is_stmt 0 view .LVU91
+ 327 00a8 42F48032 		orr	r2, r2, #65536
+ 328 00ac C3F81824 		str	r2, [r3, #1048]
+  81:Core/Scr/init.c ****         GPIOC->BSRR |= GPIO_BSRR_BS0 + GPIO_BSRR_BR1;
+ 329              		.loc 1 81 9 is_stmt 1 view .LVU92
+ 330              		.loc 1 81 14 is_stmt 0 view .LVU93
+ 331 00b0 0D4A     		ldr	r2, .L20+4
+ 332 00b2 9369     		ldr	r3, [r2, #24]
+ 333              		.loc 1 81 21 view .LVU94
+ 334 00b4 43F40033 		orr	r3, r3, #131072
+ 335 00b8 43F00103 		orr	r3, r3, #1
+ 336 00bc 9361     		str	r3, [r2, #24]
+  82:Core/Scr/init.c ****         break;
+ 337              		.loc 1 82 9 is_stmt 1 view .LVU95
+ 338 00be 7047     		bx	lr
+ 339              	.L12:
+  83:Core/Scr/init.c ****     case 5:
+  84:Core/Scr/init.c ****         *(uint32_t *)(0x40020400UL + 0x18UL) |= 0x1UL;
+ 340              		.loc 1 84 9 view .LVU96
+ 341 00c0 084B     		ldr	r3, .L20
+ 342 00c2 D3F81824 		ldr	r2, [r3, #1048]
+ 343              		.loc 1 84 46 is_stmt 0 view .LVU97
+ 344 00c6 42F00102 		orr	r2, r2, #1
+ 345 00ca C3F81824 		str	r2, [r3, #1048]
+  85:Core/Scr/init.c ****         RCC_GPIOA_BSRR |= P4_HIGH;
+ 346              		.loc 1 85 9 is_stmt 1 view .LVU98
+ 347 00ce 9A69     		ldr	r2, [r3, #24]
+ 348              		.loc 1 85 24 is_stmt 0 view .LVU99
+ 349 00d0 42F01002 		orr	r2, r2, #16
+ 350 00d4 9A61     		str	r2, [r3, #24]
+  86:Core/Scr/init.c ****         GPIOC->BSRR |= GPIO_BSRR_BS0 + GPIO_BSRR_BS1;
+ 351              		.loc 1 86 9 is_stmt 1 view .LVU100
+ 352              		.loc 1 86 14 is_stmt 0 view .LVU101
+ 353 00d6 044A     		ldr	r2, .L20+4
+ 354 00d8 9369     		ldr	r3, [r2, #24]
+ 355              		.loc 1 86 21 view .LVU102
+ 356 00da 43F00303 		orr	r3, r3, #3
+ 357 00de 9361     		str	r3, [r2, #24]
+  87:Core/Scr/init.c ****         break;
+ 358              		.loc 1 87 9 is_stmt 1 view .LVU103
+ 359              	.L10:
+  88:Core/Scr/init.c ****     }
+  89:Core/Scr/init.c **** }
+ 360              		.loc 1 89 1 is_stmt 0 view .LVU104
+ 361 00e0 7047     		bx	lr
+ 362              	.L21:
+ 363 00e2 00BF     		.align	2
+ 364              	.L20:
+ 365 00e4 00000240 		.word	1073872896
+ 366 00e8 00080240 		.word	1073874944
+ 367              		.cfi_endproc
+ 368              	.LFE133:
+ 370              		.text
+ 371              	.Letext0:
+ 372              		.file 2 "C:/for_all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/machi
+ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\ccqN2ELG.s 			page 9
 
 
- 377              		.loc 1 88 13 is_stmt 1 view .LVU98
- 378 00a4 D3F81824 		ldr	r2, [r3, #1048]
- 379              		.loc 1 88 50 is_stmt 0 view .LVU99
- 380 00a8 42F48032 		orr	r2, r2, #65536
- 381 00ac C3F81824 		str	r2, [r3, #1048]
-  89:Core/Scr/init.c ****             GPIOC->BSRR |= GPIO_BSRR_BS0 + GPIO_BSRR_BR1;
- 382              		.loc 1 89 13 is_stmt 1 view .LVU100
- 383              		.loc 1 89 18 is_stmt 0 view .LVU101
- 384 00b0 0D4A     		ldr	r2, .L26+4
- 385 00b2 9369     		ldr	r3, [r2, #24]
- 386              		.loc 1 89 25 view .LVU102
- 387 00b4 43F40033 		orr	r3, r3, #131072
- 388 00b8 43F00103 		orr	r3, r3, #1
- 389 00bc 9361     		str	r3, [r2, #24]
-  90:Core/Scr/init.c ****             break;
- 390              		.loc 1 90 13 is_stmt 1 view .LVU103
- 391 00be 7047     		bx	lr
- 392              	.L18:
-  91:Core/Scr/init.c ****             case 5:
-  92:Core/Scr/init.c ****             *(uint32_t *)(0x40020400UL + 0x18UL) |= 0x1UL;
- 393              		.loc 1 92 13 view .LVU104
- 394 00c0 084B     		ldr	r3, .L26
- 395 00c2 D3F81824 		ldr	r2, [r3, #1048]
- 396              		.loc 1 92 50 is_stmt 0 view .LVU105
- 397 00c6 42F00102 		orr	r2, r2, #1
- 398 00ca C3F81824 		str	r2, [r3, #1048]
-  93:Core/Scr/init.c ****             RCC_GPIOA_BSRR |= P4_HIGH;
- 399              		.loc 1 93 13 is_stmt 1 view .LVU106
- 400 00ce 9A69     		ldr	r2, [r3, #24]
- 401              		.loc 1 93 28 is_stmt 0 view .LVU107
- 402 00d0 42F01002 		orr	r2, r2, #16
- 403 00d4 9A61     		str	r2, [r3, #24]
-  94:Core/Scr/init.c ****             GPIOC->BSRR |= GPIO_BSRR_BS0 + GPIO_BSRR_BS1;
- 404              		.loc 1 94 13 is_stmt 1 view .LVU108
- 405              		.loc 1 94 18 is_stmt 0 view .LVU109
- 406 00d6 044A     		ldr	r2, .L26+4
- 407 00d8 9369     		ldr	r3, [r2, #24]
- 408              		.loc 1 94 25 view .LVU110
- 409 00da 43F00303 		orr	r3, r3, #3
- 410 00de 9361     		str	r3, [r2, #24]
-  95:Core/Scr/init.c ****             break;
- 411              		.loc 1 95 13 is_stmt 1 view .LVU111
- 412              	.L16:
-  96:Core/Scr/init.c ****         }
-  97:Core/Scr/init.c **** }...
- 413              		.loc 1 97 1 is_stmt 0 view .LVU112
- 414 00e0 7047     		bx	lr
- 415              	.L27:
- 416 00e2 00BF     		.align	2
- 417              	.L26:
- 418 00e4 00000240 		.word	1073872896
- 419 00e8 00080240 		.word	1073874944
- 420              		.cfi_endproc
- 421              	.LFE135:
- 423              		.text
- 424              	.Letext0:
- 425              		.file 2 "C:/for_all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/machi
-ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s 			page 10
-
-
- 426              		.file 3 "C:/for_all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/sys/_
- 427              		.file 4 "Core/Scr/../Inc/../../CMSIS/Devices/STM32F4xx/Inc/STM32F411xE/stm32f411xe.h"
-ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s 			page 11
+ 373              		.file 3 "C:/for_all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/sys/_
+ 374              		.file 4 "Core/Scr/../Inc/../../CMSIS/Devices/STM32F4xx/Inc/STM32F411xE/stm32f411xe.h"
+ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\ccqN2ELG.s 			page 10
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 init.c
-C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s:21     .text.Init_of_myself_macroses:00000000 $t
-C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s:27     .text.Init_of_myself_macroses:00000000 Init_of_myself_macroses
-C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s:63     .text.Init_of_myself_macroses:0000002c $d
-C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s:69     .text.Init_of_hand_writing:00000000 $t
-C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s:75     .text.Init_of_hand_writing:00000000 Init_of_hand_writing
-C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s:111    .text.Init_of_hand_writing:00000038 $d
-C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s:117    .text.Init_with_macroses:00000000 $t
-C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s:123    .text.Init_with_macroses:00000000 Init_with_macroses
-C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s:173    .text.Init_with_macroses:00000040 $d
-C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s:179    .text.time_skeeper:00000000 $t
-C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s:185    .text.time_skeeper:00000000 time_skeeper
-C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s:223    .text.diode_mode:00000000 $t
-C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s:229    .text.diode_mode:00000000 diode_mode
-C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s:259    .text.main_process:00000000 $t
-C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s:265    .text.main_process:00000000 main_process
-C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s:278    .text.main_process:00000008 $d
-C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s:284    .text.main_process:0000000e $t
-C:\Users\VITYAL~1\AppData\Local\Temp\ccFU9RaO.s:418    .text.main_process:000000e4 $d
+C:\Users\VITYAL~1\AppData\Local\Temp\ccqN2ELG.s:21     .text.GPIO_INIT:00000000 $t
+C:\Users\VITYAL~1\AppData\Local\Temp\ccqN2ELG.s:27     .text.GPIO_INIT:00000000 GPIO_INIT
+C:\Users\VITYAL~1\AppData\Local\Temp\ccqN2ELG.s:118    .text.GPIO_INIT:00000094 $d
+C:\Users\VITYAL~1\AppData\Local\Temp\ccqN2ELG.s:126    .text.time_skeeper:00000000 $t
+C:\Users\VITYAL~1\AppData\Local\Temp\ccqN2ELG.s:132    .text.time_skeeper:00000000 time_skeeper
+C:\Users\VITYAL~1\AppData\Local\Temp\ccqN2ELG.s:170    .text.diode_mode:00000000 $t
+C:\Users\VITYAL~1\AppData\Local\Temp\ccqN2ELG.s:176    .text.diode_mode:00000000 diode_mode
+C:\Users\VITYAL~1\AppData\Local\Temp\ccqN2ELG.s:206    .text.main_process:00000000 $t
+C:\Users\VITYAL~1\AppData\Local\Temp\ccqN2ELG.s:212    .text.main_process:00000000 main_process
+C:\Users\VITYAL~1\AppData\Local\Temp\ccqN2ELG.s:225    .text.main_process:00000008 $d
+C:\Users\VITYAL~1\AppData\Local\Temp\ccqN2ELG.s:231    .text.main_process:0000000e $t
+C:\Users\VITYAL~1\AppData\Local\Temp\ccqN2ELG.s:365    .text.main_process:000000e4 $d
 
 NO UNDEFINED SYMBOLS
