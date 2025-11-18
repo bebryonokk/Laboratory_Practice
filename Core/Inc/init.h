@@ -33,3 +33,4 @@ void GPIO_INIT(void);
 uint8_t time_skeeper(void);
 uint8_t diode_mode(uint8_t pusher, uint8_t but_check);
 void main_process(uint8_t but_check);
+void num_of_led(uint8_t but_check);
