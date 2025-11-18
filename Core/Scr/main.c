@@ -18,6 +18,5 @@ int main(void)
             pusher = 0;
         }
         main_process(but_check);
-        num_of_led(but_check);
     }
 }

@@ -63,80 +63,55 @@ void main_process(uint8_t but_check)
         RCC_GPIOA_BSRR |= P4_LOW;
         *(uint32_t *)(0x40020400UL + 0x18UL) |= 0x10000UL;
         GPIOC->BSRR |= GPIO_BSRR_BR0 + GPIO_BSRR_BR1;
+        first_led = 0;
+        second_led = 0;
+        third_led = 0;
+        fourth_led = 0;
         break;
     case 1:
         RCC_GPIOA_BSRR |= P4_HIGH;
         *(uint32_t *)(0x40020400UL + 0x18UL) |= 0x10000UL;
         GPIOC->BSRR |= GPIO_BSRR_BR0 + GPIO_BSRR_BR1;
+        first_led = 1;
+        second_led = 0;
+        third_led = 0;
+        fourth_led = 0;
         break;
     case 2:
         RCC_GPIOA_BSRR |= P4_LOW;
         *(uint32_t *)(0x40020400UL + 0x18UL) |= 0x1UL;
         GPIOC->BSRR |= GPIO_BSRR_BR0 + GPIO_BSRR_BR1;
+        first_led = 0;
+        second_led = 1;
+        third_led = 0;
+        fourth_led = 0;
         break;
     case 3:
         RCC_GPIOA_BSRR |= P4_LOW;
         *(uint32_t *)(0x40020400UL + 0x18UL) |= 0x10000UL;
         GPIOC->BSRR |= GPIO_BSRR_BR0 + GPIO_BSRR_BS1;
-        break;
+        first_led = 0;
+        second_led = 0;
+        third_led = 1;
+        fourth_led = 0;
         break;
     case 4:
         RCC_GPIOA_BSRR |= P4_LOW;
         *(uint32_t *)(0x40020400UL + 0x18UL) |= 0x10000UL;
         GPIOC->BSRR |= GPIO_BSRR_BS0 + GPIO_BSRR_BR1;
+        first_led = 0;
+        second_led = 0;
+        third_led = 0;
+        fourth_led = 1;
         break;
     case 5:
         *(uint32_t *)(0x40020400UL + 0x18UL) |= 0x1UL;
         RCC_GPIOA_BSRR |= P4_HIGH;
         GPIOC->BSRR |= GPIO_BSRR_BS0 + GPIO_BSRR_BS1;
+        first_led = 1;
+        second_led = 1;
+        third_led = 1;
+        fourth_led = 1;
         break;
     }
 }
-
-void num_of_led(uint8_t but_check)
-{
-    if (but_check == 1)
-        {
-            first_led = 1;
-            second_led = 0;
-            third_led = 0;
-            fourth_led = 0;
-        }
-        if (but_check == 2)
-        {
-            first_led = 0;
-            second_led = 1;
-            third_led = 0;
-            fourth_led = 0;
-        }
-        if (but_check == 3)
-        {
-            first_led = 0;
-            second_led = 0;
-            third_led = 1;
-            fourth_led = 0;
-        }
-        if (but_check == 4)
-        {
-            first_led = 0;
-            second_led = 0;
-            third_led = 0;
-            fourth_led = 1;
-        }
-        if (but_check == 5)
-        {
-            first_led = 1;
-            second_led = 1;
-            third_led = 1;
-            fourth_led = 1;
-        }
-        if(but_check == 0)
-        {
-            first_led = 0;
-            second_led = 0;
-            third_led = 0;
-            fourth_led = 0;
-        }
-}
-
-
