@@ -57,7 +57,7 @@ int main(void)
             third_led = 1;
             fourth_led = 1;
         }
-        else
+        if(but_check == 0)
         {
             first_led = 0;
             second_led = 0;
