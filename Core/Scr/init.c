@@ -32,6 +32,8 @@ void GPIO_INIT(void)
     CLEAR_BIT(GPIOC->PUPDR, GPIO_PUPDR_PUPDR0 | GPIO_PUPDR_PUPDR1);        // настраиваем подтяжки/стяжки пинов С0 и С1
                                                                            // на режим No Pull-Up, Pull-Down
     GPIOC->BSRR |= GPIO_BSRR_BR0 | GPIO_BSRR_BR1;                          // выключение диода перед началом
+    CLEAR_BIT(GPIOC->MODER, GPIO_MODER_MODE3);
+    CLEAR_BIT(GPIOC->MODER, GPIO_MODER_MODE2);
 }
 
 uint8_t time_skeeper(void)
