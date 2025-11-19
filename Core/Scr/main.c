@@ -1,22 +1,22 @@
 #include "../Inc/init.h"
+#include "../Inc/interrupt.h"
 
-uint8_t but_check = 0;
-uint8_t pusher = 0;
+uint16_t TickCounter = 0;
+uint16_t ButtonTicks = 0;
+bool LedState = false;
 
 int main(void)
 {
     GPIO_INIT();
+    RCC_INIT();
+    IQR_INIT();
+    SYSTIMER_INIT();
+
     while (1)
     {
-        if ((READ_BIT(GPIOC->IDR, GPIO_IDR_ID2) == RESET) && (pusher == 0))
-        {
-            pusher = time_skeeper();
-        }
-        if ((READ_BIT(GPIOC->IDR, GPIO_IDR_ID2) != RESET) && (pusher == 1))
-        {
-            but_check = diode_mode(pusher, but_check);
-            pusher = 0;
-        }
-        main_process(but_check);
+        if (LedState)
+            SET_BIT(GPIOC->BSRR, GPIO_BSRR_BS1);
+        else
+            SET_BIT(GPIOC->BSRR, GPIO_BSRR_BR1);
     }
 }

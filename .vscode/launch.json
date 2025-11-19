@@ -4,6 +4,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
         {
             "name": "Cortex Debug",
             "cwd": "${workspaceFolder}",
@@ -17,7 +18,7 @@
                 "interface/stlink.cfg",
                 "target/stm32f4x.cfg"
             ],
-            "svdFile": ".STMDevices/STM32F411xe/STM32F429.svd"
+            "svdFile": "./STMDevices/STM32F411xe/STM32F411.svd"
         }
     ]
 }

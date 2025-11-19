@@ -1,0 +1,150 @@
+ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\cc7WqnTi.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"interrupt.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/Scr/interrupt.c"
+  20              		.section	.text.SysTick_Handler,"ax",%progbits
+  21              		.align	1
+  22              		.global	SysTick_Handler
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	SysTick_Handler:
+  28              	.LFB130:
+   1:Core/Scr/interrupt.c **** #include "../Inc/interrupt.h"
+   2:Core/Scr/interrupt.c **** 
+   3:Core/Scr/interrupt.c **** extern uint16_t TickCounter;
+   4:Core/Scr/interrupt.c **** extern uint16_t ButtonTicks;
+   5:Core/Scr/interrupt.c **** extern bool LedState;
+   6:Core/Scr/interrupt.c **** 
+   7:Core/Scr/interrupt.c **** void SysTick_Handler(void)
+   8:Core/Scr/interrupt.c **** {
+  29              		.loc 1 8 1 view -0
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 0
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33              		@ link register save eliminated.
+   9:Core/Scr/interrupt.c ****     TickCounter++;
+  34              		.loc 1 9 5 view .LVU1
+  35              		.loc 1 9 16 is_stmt 0 view .LVU2
+  36 0000 024A     		ldr	r2, .L2
+  37 0002 1388     		ldrh	r3, [r2]
+  38 0004 0133     		adds	r3, r3, #1
+  39 0006 1380     		strh	r3, [r2]	@ movhi
+  10:Core/Scr/interrupt.c ****     //ButtonTicks++;
+  11:Core/Scr/interrupt.c **** }
+  40              		.loc 1 11 1 view .LVU3
+  41 0008 7047     		bx	lr
+  42              	.L3:
+  43 000a 00BF     		.align	2
+  44              	.L2:
+  45 000c 00000000 		.word	TickCounter
+  46              		.cfi_endproc
+  47              	.LFE130:
+ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\cc7WqnTi.s 			page 2
+
+
+  49              		.section	.text.EXTI3_IRQHandler,"ax",%progbits
+  50              		.align	1
+  51              		.global	EXTI3_IRQHandler
+  52              		.syntax unified
+  53              		.thumb
+  54              		.thumb_func
+  56              	EXTI3_IRQHandler:
+  57              	.LFB131:
+  12:Core/Scr/interrupt.c **** 
+  13:Core/Scr/interrupt.c **** void EXTI3_IRQHandler(void)
+  14:Core/Scr/interrupt.c **** {
+  58              		.loc 1 14 1 is_stmt 1 view -0
+  59              		.cfi_startproc
+  60              		@ args = 0, pretend = 0, frame = 0
+  61              		@ frame_needed = 0, uses_anonymous_args = 0
+  62              		@ link register save eliminated.
+  15:Core/Scr/interrupt.c ****     ButtonTicks++;
+  63              		.loc 1 15 5 view .LVU5
+  64              		.loc 1 15 16 is_stmt 0 view .LVU6
+  65 0000 0A4A     		ldr	r2, .L6
+  66 0002 1388     		ldrh	r3, [r2]
+  67 0004 0133     		adds	r3, r3, #1
+  68 0006 9BB2     		uxth	r3, r3
+  69 0008 1380     		strh	r3, [r2]	@ movhi
+  16:Core/Scr/interrupt.c **** 
+  17:Core/Scr/interrupt.c ****     if(ButtonTicks >= 2)
+  70              		.loc 1 17 5 is_stmt 1 view .LVU7
+  71              		.loc 1 17 7 is_stmt 0 view .LVU8
+  72 000a 012B     		cmp	r3, #1
+  73 000c 07D9     		bls	.L5
+  18:Core/Scr/interrupt.c ****     {
+  19:Core/Scr/interrupt.c ****         LedState = !LedState;
+  74              		.loc 1 19 9 is_stmt 1 view .LVU9
+  75 000e 084A     		ldr	r2, .L6+4
+  76 0010 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  77 0012 83F00103 		eor	r3, r3, #1
+  78              		.loc 1 19 18 is_stmt 0 view .LVU10
+  79 0016 1370     		strb	r3, [r2]
+  20:Core/Scr/interrupt.c ****         ButtonTicks = 0;
+  80              		.loc 1 20 9 is_stmt 1 view .LVU11
+  81              		.loc 1 20 21 is_stmt 0 view .LVU12
+  82 0018 044B     		ldr	r3, .L6
+  83 001a 0022     		movs	r2, #0
+  84 001c 1A80     		strh	r2, [r3]	@ movhi
+  85              	.L5:
+  21:Core/Scr/interrupt.c ****     }
+  22:Core/Scr/interrupt.c ****     SET_BIT(EXTI->PR, EXTI_PR_PR3);
+  86              		.loc 1 22 5 is_stmt 1 view .LVU13
+  87 001e 054A     		ldr	r2, .L6+8
+  88 0020 5369     		ldr	r3, [r2, #20]
+  89 0022 43F00803 		orr	r3, r3, #8
+  90 0026 5361     		str	r3, [r2, #20]
+  23:Core/Scr/interrupt.c **** }...
+  91              		.loc 1 23 1 is_stmt 0 view .LVU14
+  92 0028 7047     		bx	lr
+  93              	.L7:
+  94 002a 00BF     		.align	2
+ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\cc7WqnTi.s 			page 3
+
+
+  95              	.L6:
+  96 002c 00000000 		.word	ButtonTicks
+  97 0030 00000000 		.word	LedState
+  98 0034 003C0140 		.word	1073822720
+  99              		.cfi_endproc
+ 100              	.LFE131:
+ 102              		.text
+ 103              	.Letext0:
+ 104              		.file 2 "C:/for_all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/machi
+ 105              		.file 3 "C:/for_all/1study/MC_tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/sys/_
+ 106              		.file 4 "Core/Scr/../Inc/../Inc/../../CMSIS/Devices/STM32F4xx/Inc/STM32F411xE/stm32f411xe.h"
+ARM GAS  C:\Users\VITYAL~1\AppData\Local\Temp\cc7WqnTi.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 interrupt.c
+C:\Users\VITYAL~1\AppData\Local\Temp\cc7WqnTi.s:21     .text.SysTick_Handler:00000000 $t
+C:\Users\VITYAL~1\AppData\Local\Temp\cc7WqnTi.s:27     .text.SysTick_Handler:00000000 SysTick_Handler
+C:\Users\VITYAL~1\AppData\Local\Temp\cc7WqnTi.s:45     .text.SysTick_Handler:0000000c $d
+C:\Users\VITYAL~1\AppData\Local\Temp\cc7WqnTi.s:50     .text.EXTI3_IRQHandler:00000000 $t
+C:\Users\VITYAL~1\AppData\Local\Temp\cc7WqnTi.s:56     .text.EXTI3_IRQHandler:00000000 EXTI3_IRQHandler
+C:\Users\VITYAL~1\AppData\Local\Temp\cc7WqnTi.s:96     .text.EXTI3_IRQHandler:0000002c $d
+
+UNDEFINED SYMBOLS
+TickCounter
+ButtonTicks
+LedState
