@@ -1,8 +1,12 @@
 #include "../Inc/init.h"
 #include "../Inc/interrupt.h"
 
-uint16_t TickCounter = 0;
 uint16_t ButtonTicks = 0;
+
+uint8_t LED_OPT = 0;
+uint8_t LED_NUM = 6;
+uint8_t LED_OPTION[2][6] = {{0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}};
+
 bool LedState = false;
 
 int main(void)
@@ -14,9 +18,6 @@ int main(void)
 
     while (1)
     {
-        if (LedState)
-            SET_BIT(GPIOC->BSRR, GPIO_BSRR_BS1);
-        else
-            SET_BIT(GPIOC->BSRR, GPIO_BSRR_BR1);
+        working_mode(LED_NUM, LED_OPTION);
     }
 }

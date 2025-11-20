@@ -6,3 +6,5 @@ void GPIO_INIT(void);
 void RCC_INIT(void);
 void IQR_INIT(void);
 void SYSTIMER_INIT(void);
+void working_mode(uint8_t num, uint8_t LED_OPTION[2][6]);
+void Conf_Diodes(uint8_t LED_OPTIONS);
