@@ -13,70 +13,107 @@ bool led6 = false;
 
 void GPIO_INIT(void)
 {
-    SET_BIT(RCC->AHB1ENR, RCC_AHB1ENR_GPIOCEN | RCC_AHB1ENR_GPIOAEN | RCC_AHB1ENR_GPIOBEN); // включение тактирования шины GPIOC
-    SET_BIT(GPIOC->MODER, GPIO_MODER_MODE0_0 | GPIO_MODER_MODE1_0);                         // настройка режима работы порта C0 и С1 на вывод сигнала
+    // Включение всех используемых шин тактирования GPIO: A, B и С
+    SET_BIT(RCC->AHB1ENR, RCC_AHB1ENR_GPIOCEN | RCC_AHB1ENR_GPIOAEN | RCC_AHB1ENR_GPIOBEN);
+    // Настройка пинов светодиодов: РС0, РС1, РВ0, РА4, РА1 и РА0
+    // установка пинов на режим вывода сигнала
+    SET_BIT(GPIOC->MODER, GPIO_MODER_MODE0_0 | GPIO_MODER_MODE1_0);
     SET_BIT(GPIOA->MODER, GPIO_MODER_MODE0_0 | GPIO_MODER_MODE1_0 | GPIO_MODER_MODE4_0);
     SET_BIT(GPIOB->MODER, GPIO_MODER_MODE0_0);
-    CLEAR_BIT(GPIOC->MODER, GPIO_MODER_MODE3 | GPIO_MODER_MODE2); // явная настройка порта С13 на прием сигнала
-    CLEAR_BIT(GPIOC->OTYPER, GPIO_OTYPER_OT0 | GPIO_OTYPER_OT1);  // настройка типа выхода портов С0 и С1 на режим Output Push-Pull
+    // Настройка типа выхода пинов диодов на режим Pull-Push
+    CLEAR_BIT(GPIOC->OTYPER, GPIO_OTYPER_OT0 | GPIO_OTYPER_OT1);
     CLEAR_BIT(GPIOA->OTYPER, GPIO_OTYPER_OT0 | GPIO_OTYPER_OT1 | GPIO_OTYPER_OT4);
     CLEAR_BIT(GPIOB->OTYPER, GPIO_OTYPER_OT0);
-    SET_BIT(GPIOC->OSPEEDR, GPIO_OSPEEDER_OSPEEDR0_0 | GPIO_OSPEEDER_OSPEEDR1_0); // настройка скорости работы портов С0 и С1 на среднюю
+    // Настройка скорости работы пинов светодиодов на среднюю скорость
+    SET_BIT(GPIOC->OSPEEDR, GPIO_OSPEEDER_OSPEEDR0_0 | GPIO_OSPEEDER_OSPEEDR1_0);
     SET_BIT(GPIOA->OSPEEDR, GPIO_OSPEEDER_OSPEEDR0_0 | GPIO_OSPEEDER_OSPEEDR1_0 | GPIO_OSPEEDER_OSPEEDR4_0);
     SET_BIT(GPIOB->OSPEEDR, GPIO_OSPEEDER_OSPEEDR0_0);
-    CLEAR_BIT(GPIOC->PUPDR, GPIO_PUPDR_PUPDR0 | GPIO_PUPDR_PUPDR1); // настраиваем подтяжки/стяжки пинов С0 и С1
+    // Отключение подтяжек/стяжек для пинов светодиодов
+    CLEAR_BIT(GPIOC->PUPDR, GPIO_PUPDR_PUPDR0 | GPIO_PUPDR_PUPDR1);
     CLEAR_BIT(GPIOA->PUPDR, GPIO_PUPDR_PUPDR0 | GPIO_PUPDR_PUPDR1 | GPIO_PUPDR_PUPDR4);
     CLEAR_BIT(GPIOB->PUPDR, GPIO_PUPDR_PUPDR0);
-    SET_BIT(GPIOC->PUPDR, GPIO_PUPDR_PUPDR2_0 | GPIO_PUPDR_PUPDR3_0);
-    SET_BIT(GPIOC->BSRR, GPIO_BSRR_BR0 | GPIO_BSRR_BR1); // выключение диода перед началом
+    // Подаем низкий уровень сигнала на светодиоды перед началом работы
+    SET_BIT(GPIOC->BSRR, GPIO_BSRR_BR0 | GPIO_BSRR_BR1);
     SET_BIT(GPIOA->BSRR, GPIO_BSRR_BR0 | GPIO_BSRR_BR1 | GPIO_BSRR_BR4);
     SET_BIT(GPIOB->BSRR, GPIO_BSRR_BR0);
-
+    // Настройка пинов для работы кнопок: РС2 и РС3
+    // Явная настройка пинов кнопки на выход
+    CLEAR_BIT(GPIOC->MODER, GPIO_MODER_MODE3 | GPIO_MODER_MODE2);
+    // Включение подтяжки на пины кнопок
+    SET_BIT(GPIOC->PUPDR, GPIO_PUPDR_PUPDR2_0 | GPIO_PUPDR_PUPDR3_0);
+    // Настройка порта PC9 для измерения частоты тактирования
+    // Настройка режима работы пина на альтернативное использование
     SET_BIT(GPIOC->MODER, GPIO_MODER_MODE9_1);
+    // Настройка пина на макимальную скорость работы
     SET_BIT(GPIOC->OSPEEDR, GPIO_OSPEEDR_OSPEED9);
+    // Выбор типа алтернативной функции - МСО2
     MODIFY_REG(GPIOC->AFR[1], GPIO_AFRH_AFSEL9, 0X00UL);
 }
 
 void RCC_INIT(void)
 {
-    /*Предварительная очистка регистров RCC */
-    MODIFY_REG(RCC->CR, RCC_CR_HSITRIM, 0x80UL); // Очистка битов HSITRIM и установка 1000 0000
-    CLEAR_REG(RCC->CFGR);                        // Очистка регистра CFGR
+    // Предварительная очистка регистров RCC
+    //  Очистка битов HSITRIM и установка значения
+    //  регулирования отклонения на 10000000
+    MODIFY_REG(RCC->CR, RCC_CR_HSITRIM, 0x80UL);
+    // Очистка регистра конфигурации таймера
+    CLEAR_REG(RCC->CFGR);
     while (READ_BIT(RCC->CFGR, RCC_CFGR_SWS) != RESET)
-        ;                             // Проверка очистки регистра CR
-    CLEAR_BIT(RCC->CR, RCC_CR_PLLON); // Очистка бита PLLON в регистре CR
+        ;
+    // Очистка бита отключение PLL до начала работы
+    CLEAR_BIT(RCC->CR, RCC_CR_PLLON);
     while (READ_BIT(RCC->CR, RCC_CR_PLLRDY) != RESET)
-        ;                                            // Проверка очистки бита PLLON
-    CLEAR_BIT(RCC->CR, RCC_CR_HSEON | RCC_CR_CSSON); // Очистка битов HSEON, CSSON в регистре CR
+        ;
+    // Отключение внешнего источника тактирования и
+    // системы слежения за его частотой
+    CLEAR_BIT(RCC->CR, RCC_CR_HSEON | RCC_CR_CSSON);
     while (READ_BIT(RCC->CR, RCC_CR_HSERDY) != RESET)
-        ;                              // Проверка очистки битов HSEON, CSSON
-    CLEAR_BIT(RCC->CR, RCC_CR_HSEBYP); // Очистка бита HSEBYP в регистре CR
+        ;
+    // Выключения обхождения внешнего тактирования
+    CLEAR_BIT(RCC->CR, RCC_CR_HSEBYP);
 
-    /*Настройка главного регистра RCC */
-    SET_BIT(RCC->CR, RCC_CR_HSION); // Запускаем HSI
+    // Настройка главного регистра RCC
+    //  Включение внутреннего источника тактирования
+    SET_BIT(RCC->CR, RCC_CR_HSION);
     while (READ_BIT(RCC->CR, RCC_CR_HSIRDY) == RESET)
-        ; // Ждём пока он запустится
+        ;
 
-    /*Настройка регистра PLLCFGR*/
-    CLEAR_REG(RCC->PLLCFGR);                                        // Очищаем регистр PLLCFGR
-    SET_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLSRC_HSI);                  // Источник тактирования HSE
-    SET_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLM_3);                      // Деление источника тактирования на 8
-    SET_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLN_6 | RCC_PLLCFGR_PLLN_5); // Настрока умножения на 96
-    CLEAR_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLP_0);                    // Делитель для выхода PLL(PLLCLK) на 2
-    SET_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLQ_2);                      // Делитель для USB на 4
+    // Настройка регистра конфигурации PLL
+    //  Очищаем регистр PLLCFGR
+    CLEAR_REG(RCC->PLLCFGR);
+    // Использование внутреннего источника тактирования
+    SET_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLSRC_HSI);
+    // Деление частоты источника тактирования на 8
+    // 16/8 = 2 МГц
+    SET_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLM_3);
+    // Настрока умножения частоты PLL в блоке VCO на 96
+    // 2*96 = 192 МГц
+    SET_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLN_6 | RCC_PLLCFGR_PLLN_5);
+    // Делитель для выхода VCO на 2
+    // 192/2 = 96 МГц
+    CLEAR_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLP_0);
+    // Делитель для выхода сигнала на USB порт на 2
+    // 96/2 = 48 МГц
+    SET_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLQ_2);
 
-    /*Настройка регистра CFGR*/
-    SET_BIT(RCC->CFGR, RCC_CFGR_SW_PLL);                         // Источник системного тактирования -> выход PLL
-    CLEAR_BIT(RCC->CFGR, RCC_CFGR_HPRE_DIV1);                    // Делитель AHB1 -> 0
-    SET_BIT(RCC->CFGR, RCC_CFGR_PPRE1_DIV2);                     // Делитель APB1 -> 2 (48 МГц)
-    SET_BIT(RCC->CFGR, RCC_CFGR_PPRE2_DIV1);                     // Делитель APB2 -> 1 (96 МГц)
-    CLEAR_BIT(RCC->CFGR, RCC_CFGR_MCO2);                         // Выход MCO2 -> Sysclk
-    SET_BIT(RCC->CFGR, RCC_CFGR_MCO2PRE_2 | RCC_CFGR_MCO2PRE_1); // Делитель для MCO2 -> 4
+    // Настройка регистра концигурации таймера
+    // Источник системного тактирования - PLL
+    SET_BIT(RCC->CFGR, RCC_CFGR_SW_PLL);
+    // Делитель частоты на шине AHB -> 1
+    CLEAR_BIT(RCC->CFGR, RCC_CFGR_HPRE_DIV1);
+    // Делитель частоты на низкочастотной шине AHB1 -> 2
+    SET_BIT(RCC->CFGR, RCC_CFGR_PPRE1_DIV2);
+    // Делитель частоты на высокочастотной шине AHB2 -> 1
+    SET_BIT(RCC->CFGR, RCC_CFGR_PPRE2_DIV1);
+    // Подача на MCO2 сигнала с системного таймера
+    CLEAR_BIT(RCC->CFGR, RCC_CFGR_MCO2);
+    // Деление частоты, подаваемой на МСО2 на 4
+    SET_BIT(RCC->CFGR, RCC_CFGR_MCO2PRE_2); // Делитель для MCO2 -> 4
 
-    /*Настрйока частоты FLASH-памяти*/
+    // Настрйока частоты FLASH-памяти
+    //  Выставление задержки работы FLASH-памяти на 3 такта ожидания
     SET_BIT(FLASH->ACR, FLASH_ACR_LATENCY_3WS);
-
-    /*Включение блока PLL*/
+    // Включение блока PLL
     SET_BIT(RCC->CR, RCC_CR_PLLON);
     while (READ_BIT(RCC->CR, RCC_CR_PLLRDY) == RESET)
         ;
@@ -84,35 +121,50 @@ void RCC_INIT(void)
 
 void IQR_INIT(void)
 {
-    /*Включение тактирование периферии SYSCFG*/
+    // Включение тактирование периферии
+    // от системаного таймера
     SET_BIT(RCC->APB2ENR, RCC_APB2ENR_SYSCFGEN);
 
-    /*Обозначение снятие внешеного сигнала с линии PC3*/
-    MODIFY_REG(SYSCFG->EXTICR[0], SYSCFG_EXTICR1_EXTI3_Msk, SYSCFG_EXTICR1_EXTI3_PC);
-    MODIFY_REG(SYSCFG->EXTICR[0], SYSCFG_EXTICR1_EXTI2_Msk, SYSCFG_EXTICR1_EXTI2_PC);
+    // Обозначение снятие внешеного сигнала с лини1 PC3 и PC2
+    MODIFY_REG(SYSCFG->EXTICR[0],
+               SYSCFG_EXTICR1_EXTI3_Msk, SYSCFG_EXTICR1_EXTI3_PC);
+    MODIFY_REG(SYSCFG->EXTICR[0],
+               SYSCFG_EXTICR1_EXTI2_Msk, SYSCFG_EXTICR1_EXTI2_PC);
 
-    /*Настройка регистров EXTI*/
-    SET_BIT(EXTI->IMR, EXTI_IMR_IM3 | EXTI_IMR_IM2);    // Включение маскирование
-    CLEAR_BIT(EXTI->EMR, EXTI_EMR_EM3 | EXTI_EMR_EM2);  // Отключение генерации события
-    SET_BIT(EXTI->RTSR, EXTI_RTSR_TR3 | EXTI_RTSR_TR2); // Настройка отслеживания по спаду (кнопка была отпущена)
-    SET_BIT(EXTI->FTSR, EXTI_FTSR_TR3 | EXTI_FTSR_TR2); // Настройка отслеживания по фронту (кнопка была нажата)
+    // Настройка регистров EXTI
+    // Включение маскирования прерываний
+    SET_BIT(EXTI->IMR, EXTI_IMR_IM3 | EXTI_IMR_IM2);
+    // Выключение маскирования запроса на событие прерывания
+    CLEAR_BIT(EXTI->EMR, EXTI_EMR_EM3 | EXTI_EMR_EM2);
+    // Включение отслеживания нажатия кнопки по фронту
+    SET_BIT(EXTI->RTSR, EXTI_RTSR_TR3 | EXTI_RTSR_TR2);
+    // Включение отслеживания нажатия кнопки по спаду
+    SET_BIT(EXTI->FTSR, EXTI_FTSR_TR3 | EXTI_FTSR_TR2);
 
-    /*Настройка регистров NVIC*/
-    NVIC_SetPriority(EXTI3_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(), 0, 0)); // Выбор приоретета прерывания
-    NVIC_EnableIRQ(EXTI3_IRQn);                                                          // Разрешение прерывания
+    // Настройка регистров NVIC для определения приоритетов
+    // Автоматическое распределение приоритетов
+    NVIC_SetPriority(EXTI3_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(), 0, 0));
+    NVIC_EnableIRQ(EXTI3_IRQn);
     NVIC_SetPriority(EXTI2_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(), 0, 0));
     NVIC_EnableIRQ(EXTI2_IRQn);
 }
 
 void SYSTIMER_INIT(void)
 {
+    // Настройка системеного таймера
+    // Выключение системного таймера для настройки
     CLEAR_BIT(SysTick->CTRL, SysTick_CTRL_ENABLE_Msk);
+    // Разрешение прерываний при достижении нуля счетчика
     SET_BIT(SysTick->CTRL, SysTick_CTRL_TICKINT_Msk);
+    // Источник тактирования AHB без делителя
     SET_BIT(SysTick->CTRL, SysTick_CTRL_CLKSOURCE_Msk);
+    // Значение начала счета, эквивалентное 1 кГц
     MODIFY_REG(SysTick->LOAD, SysTick_LOAD_RELOAD_Msk,
                95999 << SysTick_LOAD_RELOAD_Pos);
+    // Сброс бита COUNTFLAG с помощью VAL
     MODIFY_REG(SysTick->VAL, SysTick_VAL_CURRENT_Msk,
                95999 << SysTick_VAL_CURRENT_Pos);
+    // Включение системного таймера
     SET_BIT(SysTick->CTRL, SysTick_CTRL_ENABLE_Msk);
 }
 
@@ -187,7 +239,3 @@ void working_mode(uint8_t num, uint8_t LED_OPTION[2][6])
         break;
     }
 }
-
-// uint16_t freq[3][3] = {{2500, 769, 500}, {1667, 265, 455}, {1250, 526, 400}};
-// bool led1_shine = false;
-// uint16_t TickCounter = 0;
